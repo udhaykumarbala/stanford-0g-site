@@ -66,8 +66,7 @@ export default function Navbar() {
           ))}
           <button
             onClick={() => {
-              document.getElementById("apply")?.scrollIntoView({ behavior: "smooth" });
-              setTimeout(() => window.dispatchEvent(new CustomEvent("openApplyModal")), 500);
+              window.dispatchEvent(new CustomEvent("openApplyModal"));
             }}
             className="bg-gradient-to-r from-brand-purple-500 to-brand-purple-400 text-white px-6 py-2.5 rounded-full text-sm font-medium hover:shadow-lg hover:shadow-brand-purple-500/25 transition-all cursor-pointer"
           >
@@ -106,8 +105,7 @@ export default function Navbar() {
               className="bg-gradient-to-r from-brand-purple-500 to-brand-purple-400 text-white px-6 py-3 rounded-full text-center font-medium mt-2 cursor-pointer"
               onClick={() => {
                 setIsMobileMenuOpen(false);
-                document.getElementById("apply")?.scrollIntoView({ behavior: "smooth" });
-                setTimeout(() => window.dispatchEvent(new CustomEvent("openApplyModal")), 500);
+                window.dispatchEvent(new CustomEvent("openApplyModal"));
               }}
             >
               Apply Now

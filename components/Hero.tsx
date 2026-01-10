@@ -88,8 +88,7 @@ export default function Hero() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => {
-                document.getElementById("apply")?.scrollIntoView({ behavior: "smooth" });
-                setTimeout(() => window.dispatchEvent(new CustomEvent("openApplyModal")), 500);
+                window.dispatchEvent(new CustomEvent("openApplyModal"));
               }}
               className="bg-gradient-to-r from-brand-purple-500 to-brand-purple-400 text-white px-8 py-4 rounded-full font-medium text-lg hover:shadow-xl hover:shadow-brand-purple-500/30 transition-all cursor-pointer"
             >
