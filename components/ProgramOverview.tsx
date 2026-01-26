@@ -42,11 +42,11 @@ export default function ProgramOverview() {
               The Premier <span className="text-gradient">Web3 Accelerator</span>
             </h2>
             <p className="text-gray-600 text-lg mb-8 leading-relaxed">
-              Blockchain Builders, founded by pioneers of Stanford's blockchain
+              Blockchain Builders, led by pioneers from Stanford's blockchain
               ecosystem, partners with 0G to bring you an intensive 10-week program
               designed to help founders build, launch, and scale projects on the 0G
-              protocol. Get hands-on support from industry experts and access to
-              Stanford's renowned blockchain network and world-class ecosystem.
+              protocol. Get hands-on support from industry experts and access to a
+              world-class network including Stanford's blockchain community.
             </p>
 
             {/* Partner Logos */}

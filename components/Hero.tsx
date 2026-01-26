@@ -84,7 +84,7 @@ export default function Hero() {
 
           {/* Stanford Subtitle */}
           <p className="text-base md:text-lg text-gray-500 mb-12 max-w-2xl mx-auto font-medium">
-            From Stanford's pioneering blockchain ecosystem
+            Led by pioneers from Stanford's blockchain ecosystem
           </p>
 
           {/* CTAs */}

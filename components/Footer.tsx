@@ -31,7 +31,7 @@ export default function Footer() {
           <div className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full">
             <span className="text-2xl">🎓</span>
             <span className="text-sm text-gray-600 font-medium">
-              Part of Stanford's Blockchain Builder Ecosystem
+              Led by pioneers from Stanford's blockchain ecosystem
             </span>
           </div>
         </div>
