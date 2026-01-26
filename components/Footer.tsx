@@ -26,6 +26,16 @@ export default function Footer() {
   return (
     <footer className="py-16 border-t border-brand-purple-500/10 bg-white/50">
       <div className="max-w-7xl mx-auto px-6">
+        {/* Stanford Badge */}
+        <div className="flex justify-center mb-8">
+          <div className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full">
+            <span className="text-2xl">🎓</span>
+            <span className="text-sm text-gray-600 font-medium">
+              Part of Stanford's Blockchain Builder Ecosystem
+            </span>
+          </div>
+        </div>
+
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           {/* Logos */}
           <div className="flex items-center gap-4">

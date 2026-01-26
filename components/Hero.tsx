@@ -77,9 +77,14 @@ export default function Hero() {
           </h1>
 
           {/* Subheadline */}
-          <p className="text-xl md:text-2xl text-gray-600 mb-12 max-w-2xl mx-auto">
+          <p className="text-xl md:text-2xl text-gray-600 mb-3 max-w-2xl mx-auto">
             Join the 0G Blockchain Builders Accelerator. 10 weeks to transform
             your Web3 vision into reality.
+          </p>
+
+          {/* Stanford Subtitle */}
+          <p className="text-base md:text-lg text-gray-500 mb-12 max-w-2xl mx-auto font-medium">
+            From Stanford's pioneering blockchain ecosystem
           </p>
 
           {/* CTAs */}
