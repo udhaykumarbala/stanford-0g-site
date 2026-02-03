@@ -14,8 +14,8 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: "0G Blockchain Builders Accelerator",
-  description: "10-week accelerator program for Web3 founders building on the 0G protocol",
-  keywords: ["0G", "blockchain", "accelerator", "Web3", "AI", "startup"],
+  description: "10-week accelerator from Stanford-backed Blockchain Builders and 0G protocol for Web3 founders building the future of AI infrastructure",
+  keywords: ["0G", "blockchain", "accelerator", "Web3", "AI", "startup", "Stanford", "Stanford blockchain", "Stanford accelerator"],
 };
 
 export default function RootLayout({
