@@ -6,6 +6,7 @@ import WhatYouBuild from "@/components/WhatYouBuild";
 import Timeline from "@/components/Timeline";
 import Benefits from "@/components/Benefits";
 import WhoShouldApply from "@/components/WhoShouldApply";
+import Mentors from "@/components/Mentors";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 
@@ -20,6 +21,7 @@ export default function Home() {
       <Timeline />
       <Benefits />
       <WhoShouldApply />
+      <Mentors />
       <CTA />
       <Footer />
     </main>
