@@ -76,10 +76,10 @@ export default function CTA() {
             <p className="text-gray-500 mt-8">
               Questions?{" "}
               <a
-                href="mailto:accelerator@0g.ai"
+                href="mailto:0gm@0g.ai"
                 className="text-brand-purple-500 hover:text-brand-purple-400 transition-colors font-medium"
               >
-                accelerator@0g.ai
+                0gm@0g.ai
               </a>
             </p>
           </motion.div>
@@ -129,7 +129,7 @@ export default function CTA() {
                     reach out to us directly.
                   </p>
                   <a
-                    href="mailto:accelerator@0g.ai"
+                    href="mailto:0gm@0g.ai"
                     className="inline-flex items-center gap-2 bg-gradient-to-r from-brand-purple-500 to-brand-purple-400 text-white px-6 py-3 rounded-full font-medium hover:shadow-lg hover:shadow-brand-purple-500/30 transition-all"
                   >
                     Contact Us
