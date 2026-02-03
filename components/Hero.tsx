@@ -72,12 +72,12 @@ export default function Hero() {
 
           {/* Headline */}
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight text-gray-900">
-            0g Apollo Program - <span className="text-gradient">AI Accelerator</span>
+            0G Apollo Program - <span className="text-gradient">AI Accelerator</span>
           </h1>
 
           {/* Subheadline */}
           <p className="text-xl md:text-2xl text-gray-600 mb-3 max-w-2xl mx-auto">
-            by Blockchain Builders
+            By Blockchain Builders
           </p>
 
           {/* Stanford Subtitle */}
