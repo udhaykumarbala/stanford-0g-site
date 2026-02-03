@@ -72,19 +72,17 @@ export default function Hero() {
 
           {/* Headline */}
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight text-gray-900">
-            Build the Future of{" "}
-            <span className="text-gradient">AI Infrastructure</span>
+            0g Apollo Program - <span className="text-gradient">AI Accelerator</span>
           </h1>
 
           {/* Subheadline */}
           <p className="text-xl md:text-2xl text-gray-600 mb-3 max-w-2xl mx-auto">
-            Join the 0G Blockchain Builders Accelerator. 10 weeks to transform
-            your Web3 vision into reality.
+            by Blockchain Builders
           </p>
 
           {/* Stanford Subtitle */}
-          <p className="text-base md:text-lg text-gray-500 mb-12 max-w-2xl mx-auto font-medium">
-            Led by pioneers from Stanford's blockchain ecosystem
+          <p className="text-base md:text-lg text-gray-500 mb-12 max-w-2xl mx-auto font-medium italic">
+            Startups the Silicon Valley way, led by Stanford veterans
           </p>
 
           {/* CTAs */}
