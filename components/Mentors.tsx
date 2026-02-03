@@ -34,22 +34,19 @@ interface Mentor {
 
 const mentors: Mentor[] = [
   {
-    name: "Dr. Sarah Chen",
-    position: "Former Stanford Blockchain Lead",
-    image: "/mentors/placeholder-1.jpg",
+    name: "Michael Heinrich",
+    position: "CEO at 0G Labs, Stanford Alumnus",
+    image: "/mentors/michael-heinrich.jpg",
     socials: {
       linkedin: "https://www.linkedin.com/in/mheinrich/",
-      twitter: "https://twitter.com/example",
-      github: "https://github.com/example",
     },
   },
   {
-    name: "Michael Rodriguez",
-    position: "0G Protocol Core Developer",
-    image: "/mentors/placeholder-2.jpg",
+    name: "Arne Hartmann",
+    position: "General Atlantic, 0G Ecosystem Builder, Stanford GSB",
+    image: "/mentors/arne-hartmann.jpg",
     socials: {
       linkedin: "https://www.linkedin.com/in/arnehartmann/",
-      twitter: "https://twitter.com/example",
     },
   },
   {
