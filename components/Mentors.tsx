@@ -38,7 +38,7 @@ const mentors: Mentor[] = [
     position: "Former Stanford Blockchain Lead",
     image: "/mentors/placeholder-1.jpg",
     socials: {
-      linkedin: "https://linkedin.com/in/example",
+      linkedin: "https://www.linkedin.com/in/mheinrich/",
       twitter: "https://twitter.com/example",
       github: "https://github.com/example",
     },
@@ -48,7 +48,7 @@ const mentors: Mentor[] = [
     position: "0G Protocol Core Developer",
     image: "/mentors/placeholder-2.jpg",
     socials: {
-      linkedin: "https://linkedin.com/in/example",
+      linkedin: "https://www.linkedin.com/in/arnehartmann/",
       twitter: "https://twitter.com/example",
     },
   },
