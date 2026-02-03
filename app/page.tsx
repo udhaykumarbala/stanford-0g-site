@@ -4,6 +4,7 @@ import ProgramStats from "@/components/ProgramStats";
 import ProgramOverview from "@/components/ProgramOverview";
 import WhatYouBuild from "@/components/WhatYouBuild";
 import Timeline from "@/components/Timeline";
+import PreviousProjects from "@/components/PreviousProjects";
 import Benefits from "@/components/Benefits";
 import WhoShouldApply from "@/components/WhoShouldApply";
 import Mentors from "@/components/Mentors";
@@ -19,6 +20,7 @@ export default function Home() {
       <ProgramOverview />
       <WhatYouBuild />
       <Timeline />
+      <PreviousProjects />
       <Benefits />
       <WhoShouldApply />
       <Mentors />
