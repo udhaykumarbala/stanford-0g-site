@@ -131,3 +131,48 @@ export const APPLY_CRITERIA = [
   "Committed founding team (2+ members)",
   "Available for the full 10-week program",
 ];
+
+export const RECOMMENDED_IDEAS = [
+  {
+    title: "Decentralized AI Inference",
+    description:
+      "Platforms that leverage 0G's data availability layer to enable trustless, verifiable AI model inference at scale.",
+    icon: "Brain",
+    tag: "AI",
+  },
+  {
+    title: "On-Chain Data Marketplaces",
+    description:
+      "Build open marketplaces for buying, selling, and licensing structured data with provenance guarantees powered by 0G storage.",
+    icon: "Database",
+    tag: "Data",
+  },
+  {
+    title: "AI-Powered DeFi Protocols",
+    description:
+      "Lending, trading, or risk management protocols that integrate AI agents for autonomous strategy execution on-chain.",
+    icon: "TrendingUp",
+    tag: "DeFi",
+  },
+  {
+    title: "Verifiable Compute Networks",
+    description:
+      "Infrastructure for offloading heavy computation off-chain while providing cryptographic proof of correctness back on-chain.",
+    icon: "Shield",
+    tag: "Infrastructure",
+  },
+  {
+    title: "Decentralized Content & Media",
+    description:
+      "Platforms for AI-generated or user-generated content with decentralized storage, attribution, and monetization models.",
+    icon: "Film",
+    tag: "Consumer",
+  },
+  {
+    title: "Cross-Chain Data Availability",
+    description:
+      "Bridges and middleware that bring 0G's high-throughput data availability to other L1 and L2 ecosystems.",
+    icon: "Layers",
+    tag: "Infrastructure",
+  },
+];
