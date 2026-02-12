@@ -87,16 +87,16 @@ export default function Hero() {
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <motion.button
+            <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              onClick={() => {
-                window.dispatchEvent(new CustomEvent("openApplyModal"));
-              }}
-              className="bg-gradient-to-r from-brand-purple-500 to-brand-purple-400 text-white px-8 py-4 rounded-full font-medium text-lg hover:shadow-xl hover:shadow-brand-purple-500/30 transition-all cursor-pointer"
+              href="https://forms.gle/TYM4tZaD1gYrDVdS9"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gradient-to-r from-brand-purple-500 to-brand-purple-400 text-white px-8 py-4 rounded-full font-medium text-lg hover:shadow-xl hover:shadow-brand-purple-500/30 transition-all cursor-pointer inline-block"
             >
               Apply Now
-            </motion.button>
+            </motion.a>
             <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}

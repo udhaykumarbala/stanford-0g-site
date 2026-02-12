@@ -36,7 +36,7 @@ const mentors: Mentor[] = [
   {
     name: "Michael Heinrich",
     position: "CEO at 0G Labs, Stanford Alumnus",
-    image: "/mentors/michael-heinrich.jpg",
+    image: "/michael.jpeg",
     socials: {
       linkedin: "https://www.linkedin.com/in/mheinrich/",
     },
@@ -44,7 +44,7 @@ const mentors: Mentor[] = [
   {
     name: "Arne Hartmann",
     position: "General Atlantic, 0G Ecosystem Builder, Stanford GSB",
-    image: "/mentors/arne-hartmann.jpg",
+    image: "/arne.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/arnehartmann/",
     },
@@ -151,18 +151,20 @@ export default function Mentors() {
               {/* Profile Image */}
               <div className="mb-6 flex justify-center">
                 <div className="relative w-32 h-32 rounded-full overflow-hidden ring-4 ring-brand-purple-500/20 group-hover:ring-brand-purple-500/40 transition-all">
-                  <div className="w-full h-full bg-gradient-to-br from-brand-purple-200 to-brand-purple-100 flex items-center justify-center">
-                    <span className="text-4xl font-bold text-brand-purple-500">
-                      {mentor.name.charAt(0)}
-                    </span>
-                  </div>
-                  {/* Uncomment when you have actual images */}
-                  {/* <Image
-                    src={mentor.image}
-                    alt={mentor.name}
-                    fill
-                    className="object-cover"
-                  /> */}
+                  {mentor.image.startsWith("/mentors/placeholder") ? (
+                    <div className="w-full h-full bg-gradient-to-br from-brand-purple-200 to-brand-purple-100 flex items-center justify-center">
+                      <span className="text-4xl font-bold text-brand-purple-500">
+                        {mentor.name.charAt(0)}
+                      </span>
+                    </div>
+                  ) : (
+                    <Image
+                      src={mentor.image}
+                      alt={mentor.name}
+                      fill
+                      className="object-cover"
+                    />
+                  )}
                 </div>
               </div>
 

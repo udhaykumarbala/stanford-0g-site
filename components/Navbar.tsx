@@ -64,14 +64,14 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
-          <button
-            onClick={() => {
-              window.dispatchEvent(new CustomEvent("openApplyModal"));
-            }}
+          <a
+            href="https://forms.gle/TYM4tZaD1gYrDVdS9"
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-gradient-to-r from-brand-purple-500 to-brand-purple-400 text-white px-6 py-2.5 rounded-full text-sm font-medium hover:shadow-lg hover:shadow-brand-purple-500/25 transition-all cursor-pointer"
           >
             Apply Now
-          </button>
+          </a>
         </div>
 
         {/* Mobile Menu Button */}
@@ -101,15 +101,15 @@ export default function Navbar() {
                 {link.label}
               </a>
             ))}
-            <button
-              className="bg-gradient-to-r from-brand-purple-500 to-brand-purple-400 text-white px-6 py-3 rounded-full text-center font-medium mt-2 cursor-pointer"
-              onClick={() => {
-                setIsMobileMenuOpen(false);
-                window.dispatchEvent(new CustomEvent("openApplyModal"));
-              }}
+            <a
+              href="https://forms.gle/TYM4tZaD1gYrDVdS9"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gradient-to-r from-brand-purple-500 to-brand-purple-400 text-white px-6 py-3 rounded-full text-center font-medium mt-2 cursor-pointer block"
+              onClick={() => setIsMobileMenuOpen(false)}
             >
               Apply Now
-            </button>
+            </a>
           </div>
         </motion.div>
       )}
