@@ -34,22 +34,14 @@ export default function Navbar() {
             : "max-w-full py-4"
         }`}
       >
-        {/* Logos */}
-        <a href="#" className="flex items-center gap-4">
+        {/* Logo */}
+        <a href="#" className="flex items-center">
           <Image
-            src="/0G-Logo-Purple_Hero.svg"
-            alt="0G"
-            width={80}
-            height={40}
-            className="h-8 w-auto"
-          />
-          <span className="text-gray-400 text-xl hidden sm:block">×</span>
-          <Image
-            src="/blockchain-builder-logo.webp"
-            alt="Blockchain Builders"
-            width={160}
-            height={40}
-            className="h-8 w-auto hidden sm:block"
+            src="/apollo.png"
+            alt="0G Apollo Program"
+            width={200}
+            height={50}
+            className="h-10 w-auto"
           />
         </a>
 
