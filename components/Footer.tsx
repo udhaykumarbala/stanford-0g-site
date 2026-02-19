@@ -27,22 +27,14 @@ export default function Footer() {
     <footer className="py-16 border-t border-brand-purple-500/10 bg-white/50">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-          {/* Logos */}
-          <div className="flex items-center gap-4">
+          {/* Logo */}
+          <div className="flex items-center">
             <Image
-              src="/0G-Logo-Purple_Hero.svg"
-              alt="0G"
-              width={60}
-              height={30}
-              className="h-6 w-auto"
-            />
-            <span className="text-gray-400">×</span>
-            <Image
-              src="/blockchain-builder-logo.webp"
-              alt="Blockchain Builders"
-              width={120}
-              height={30}
-              className="h-6 w-auto"
+              src="/apollo.png"
+              alt="0G Apollo Program"
+              width={200}
+              height={50}
+              className="h-10 w-auto"
             />
           </div>
 

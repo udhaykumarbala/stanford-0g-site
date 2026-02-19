@@ -13,7 +13,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "0G Blockchain Builders Accelerator",
+  title: "0G Apollo Program - AI Accelerator",
   description: "8-week accelerator from Stanford-backed Blockchain Builders and 0G protocol for Web3 founders building the future of AI infrastructure",
   keywords: ["0G", "blockchain", "accelerator", "Web3", "AI", "startup", "Stanford", "Stanford blockchain", "Stanford accelerator"],
 };
