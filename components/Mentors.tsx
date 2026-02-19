@@ -42,6 +42,14 @@ const mentors: Mentor[] = [
     },
   },
   {
+    name: "Ming Wu",
+    position: "CTO at 0G Labs",
+    image: "/ming.png",
+    socials: {
+      linkedin: "https://www.linkedin.com/in/ming-wu-7a598b1b/",
+    },
+  },
+  {
     name: "Arne Hartmann",
     position: "General Atlantic, 0G Ecosystem Builder, Stanford GSB",
     image: "/arne.png",
@@ -50,40 +58,43 @@ const mentors: Mentor[] = [
     },
   },
   {
-    name: "Dr. Emily Watson",
-    position: "AI Infrastructure Architect",
-    image: "/mentors/placeholder-3.jpg",
+    name: "Kun Peng",
+    position: "GP, Blockchain Builders · Founder Stanford Blockchain Accelerator & BASS · Advisor to 40+ Startups",
+    image: "/kun.png",
     socials: {
-      linkedin: "https://linkedin.com/in/example",
-      github: "https://github.com/example",
+      linkedin: "https://www.linkedin.com/in/elkun/",
     },
   },
   {
-    name: "James Liu",
-    position: "Web3 Venture Partner",
-    image: "/mentors/placeholder-4.jpg",
+    name: "Steven Willinger",
+    position: "GP, Blockchain Builders · Coinbase Ventures Lead · Ex-Google & Blockstream · Stanford GSB",
+    image: "/steven.png",
     socials: {
-      linkedin: "https://linkedin.com/in/example",
-      twitter: "https://twitter.com/example",
+      linkedin: "https://www.linkedin.com/in/stevenwillinger/",
     },
   },
   {
-    name: "Dr. Aisha Patel",
-    position: "Stanford CS Professor",
-    image: "/mentors/placeholder-5.jpg",
+    name: "Gil Rosen",
+    position: "GP, Blockchain Builders · Exited Founder (Eccella) · 50+ Angel Deals · Stanford GSB",
+    image: "/gil.png",
     socials: {
-      linkedin: "https://linkedin.com/in/example",
-      twitter: "https://twitter.com/example",
-      github: "https://github.com/example",
+      linkedin: "https://www.linkedin.com/in/rosengil/",
     },
   },
   {
-    name: "David Kim",
-    position: "Blockchain Builders Founder",
-    image: "/mentors/placeholder-6.jpg",
+    name: "Eric Peter",
+    position: "Venture Partner, AI Specialist · PM at Databricks & Google Cloud · Stanford GSB",
+    image: "/eric.png",
     socials: {
-      linkedin: "https://linkedin.com/in/example",
-      twitter: "https://twitter.com/example",
+      linkedin: "https://www.linkedin.com/in/ericcpeter/",
+    },
+  },
+  {
+    name: "Jason Scott",
+    position: "Accelerator Ops · Lead Google For Startups Worldwide · Stanford GSB & MIT",
+    image: "/jason.png",
+    socials: {
+      linkedin: "https://www.linkedin.com/in/jason-alexander-scott/",
     },
   },
 ];
@@ -138,7 +149,7 @@ export default function Mentors() {
         </motion.div>
 
         {/* Mentors Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="flex flex-wrap justify-center gap-8">
           {mentors.map((mentor, index) => (
             <motion.div
               key={index}
@@ -146,7 +157,7 @@ export default function Mentors() {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               whileHover={{ y: -10 }}
-              className="glass glass-hover rounded-3xl p-8 text-center group"
+              className="glass glass-hover rounded-3xl p-8 text-center group w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.34rem)]"
             >
               {/* Profile Image */}
               <div className="mb-6 flex justify-center">

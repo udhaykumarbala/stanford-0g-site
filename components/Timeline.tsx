@@ -2,7 +2,13 @@
 
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import { useRef } from "react";
-import { TIMELINE_DATA } from "@/lib/constants";
+import { Presentation, GraduationCap, Calendar } from "lucide-react";
+import { TIMELINE_DATA, MILESTONES } from "@/lib/constants";
+
+const milestoneIcons = {
+  Presentation,
+  GraduationCap,
+};
 
 export default function Timeline() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -32,11 +38,17 @@ export default function Timeline() {
           className="text-center mb-20"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
-            10-Week <span className="text-gradient">Journey</span>
+            8-Week <span className="text-gradient">Journey</span>
           </h2>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+          <p className="text-gray-600 text-lg max-w-2xl mx-auto mb-4">
             A structured program to take you from concept to launch
           </p>
+          <div className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full">
+            <Calendar className="text-brand-purple-500" size={16} />
+            <span className="text-sm text-gray-600 font-medium">
+              April 8 – June 9, 2025
+            </span>
+          </div>
         </motion.div>
 
         {/* Timeline */}
@@ -83,6 +95,46 @@ export default function Timeline() {
             })}
           </div>
         </div>
+
+        {/* Demo Day & Graduation */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8 }}
+          className="mt-24"
+        >
+          <div className="flex flex-col md:flex-row gap-6 justify-center">
+            {MILESTONES.map((milestone, index) => {
+              const Icon =
+                milestoneIcons[
+                  milestone.icon as keyof typeof milestoneIcons
+                ];
+              return (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: index * 0.15 }}
+                  whileHover={{ y: -5 }}
+                  className="glass glass-hover rounded-3xl p-8 text-center flex-1 max-w-md group"
+                >
+                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-r from-brand-purple-500/20 to-brand-purple-400/10 flex items-center justify-center mx-auto mb-5 group-hover:from-brand-purple-500/30 group-hover:to-brand-purple-400/20 transition-all">
+                    <Icon
+                      className="text-brand-purple-500 group-hover:text-brand-purple-400 transition-colors"
+                      size={28}
+                    />
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                    {milestone.title}
+                  </h3>
+                  <p className="text-gray-600">{milestone.description}</p>
+                </motion.div>
+              );
+            })}
+          </div>
+        </motion.div>
       </div>
     </section>
   );
@@ -90,7 +142,7 @@ export default function Timeline() {
 
 interface TimelineItemProps {
   item: {
-    weeks: string;
+    week: string;
     title: string;
     topics: string[];
   };
@@ -100,7 +152,12 @@ interface TimelineItemProps {
   itemProgress: number;
 }
 
-function TimelineItem({ item, index, totalItems, scrollProgress, itemProgress }: TimelineItemProps) {
+function TimelineItem({
+  item,
+  index,
+  scrollProgress,
+  itemProgress,
+}: TimelineItemProps) {
   const isEven = index % 2 === 0;
 
   // Calculate opacity and scale based on scroll position
@@ -153,10 +210,12 @@ function TimelineItem({ item, index, totalItems, scrollProgress, itemProgress }:
         >
           <div className="flex items-center gap-3 mb-4">
             <span className="text-brand-purple-500 font-mono text-sm font-semibold">
-              WEEKS {item.weeks}
+              WEEKS {item.week}
             </span>
           </div>
-          <h3 className="text-2xl font-bold mb-4 text-gray-900">{item.title}</h3>
+          <h3 className="text-2xl font-bold mb-4 text-gray-900">
+            {item.title}
+          </h3>
           <ul className="space-y-2">
             {item.topics.map((topic, topicIndex) => (
               <motion.li
@@ -165,9 +224,9 @@ function TimelineItem({ item, index, totalItems, scrollProgress, itemProgress }:
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: topicIndex * 0.1 }}
-                className="text-gray-600 flex items-center gap-2"
+                className="text-gray-600 flex items-start gap-2"
               >
-                <span className="w-1.5 h-1.5 rounded-full bg-brand-purple-500 flex-shrink-0" />
+                <span className="w-1.5 h-1.5 rounded-full bg-brand-purple-500 flex-shrink-0 mt-2" />
                 {topic}
               </motion.li>
             ))}

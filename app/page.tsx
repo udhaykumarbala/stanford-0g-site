@@ -3,7 +3,6 @@ import Hero from "@/components/Hero";
 import ProgramStats from "@/components/ProgramStats";
 import ProgramOverview from "@/components/ProgramOverview";
 import WhatYouBuild from "@/components/WhatYouBuild";
-import RecommendedIdeas from "@/components/RecommendedIdeas";
 import Timeline from "@/components/Timeline";
 import PreviousProjects from "@/components/PreviousProjects";
 import Benefits from "@/components/Benefits";
@@ -20,7 +19,6 @@ export default function Home() {
       <ProgramStats />
       <ProgramOverview />
       <WhatYouBuild />
-      <RecommendedIdeas />
       <Timeline />
       <PreviousProjects />
       <Benefits />
