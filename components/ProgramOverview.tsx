@@ -43,7 +43,7 @@ export default function ProgramOverview() {
             </h2>
             <p className="text-gray-600 text-lg mb-8 leading-relaxed">
               Blockchain Builders, led by pioneers from Stanford's blockchain
-              ecosystem, partners with 0G to bring you an intensive 10-week program
+              ecosystem, partners with 0G to bring you an intensive 8-week program
               designed to help founders build, launch, and scale projects on the 0G
               protocol. Get hands-on support from industry experts and access to a
               world-class network including Stanford's blockchain community.
@@ -51,6 +51,16 @@ export default function ProgramOverview() {
 
             {/* Partner Logos */}
             <div className="flex items-center gap-6 flex-wrap">
+              <div className="glass px-6 py-4 rounded-xl">
+                <Image
+                  src="/google.webp"
+                  alt="Google"
+                  width={120}
+                  height={50}
+                  className="h-10 w-auto"
+                />
+              </div>
+              <span className="text-gray-400 text-2xl">×</span>
               <div className="glass px-6 py-4 rounded-xl">
                 <Image
                   src="/0G-Logo-Purple_Hero.svg"

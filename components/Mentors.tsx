@@ -51,7 +51,7 @@ const mentors: Mentor[] = [
   },
   {
     name: "Arne Hartmann",
-    position: "General Atlantic, 0G Ecosystem Builder, Stanford GSB",
+    position: "CFO at 0G Labs, Stanford GSB",
     image: "/arne.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/arnehartmann/",

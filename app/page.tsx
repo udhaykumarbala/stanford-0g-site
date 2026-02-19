@@ -20,7 +20,7 @@ export default function Home() {
       <ProgramOverview />
       <WhatYouBuild />
       <Timeline />
-      <PreviousProjects />
+      {/* <PreviousProjects /> */}
       <Benefits />
       <WhoShouldApply />
       <Mentors />
