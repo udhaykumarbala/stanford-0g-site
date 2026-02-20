@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Rocket, Target, Zap } from "lucide-react";
+import { Rocket, Target, Zap, MapPin } from "lucide-react";
 import Image from "next/image";
 
 export default function ProgramOverview() {
@@ -20,6 +20,11 @@ export default function ProgramOverview() {
       icon: Target,
       title: "Focused Curriculum",
       description: "6 modules covering everything you need",
+    },
+    {
+      icon: MapPin,
+      title: "Stanford IRL Event",
+      description: "In-person sessions at Stanford University",
     },
     {
       icon: Zap,
@@ -43,7 +48,7 @@ export default function ProgramOverview() {
             </h2>
             <p className="text-gray-600 text-lg mb-8 leading-relaxed">
               Blockchain Builders, led by pioneers from Stanford's blockchain
-              ecosystem, partners with 0G to bring you an intensive 8-week program
+              ecosystem, partners with 0G to bring you an intensive 10-week program
               designed to help founders build, launch, and scale projects on the 0G
               protocol. Get hands-on support from industry experts and access to a
               world-class network including Stanford's blockchain community.

@@ -21,6 +21,11 @@ export default function ProgramStats() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="text-center"
             >
+              <div className="h-5 flex items-end justify-center">
+                {"prefix" in stat && stat.prefix && (
+                  <span className="text-sm text-gray-500 font-medium">{stat.prefix}</span>
+                )}
+              </div>
               <div className="text-4xl md:text-5xl font-bold text-gradient mb-2">
                 {stat.value}
               </div>

@@ -50,11 +50,17 @@ const mentors: Mentor[] = [
     },
   },
   {
-    name: "Arne Hartmann",
-    position: "CFO at 0G Labs, Stanford GSB",
-    image: "/arne.png",
+    name: "Weisi Yuen",
+    position: "CSO/CPO at 0G Labs, MIT MBA, Ex-McKinsey & Amazon",
+    image: "/weisi.avif",
+    socials: {},
+  },
+  {
+    name: "Steven Willinger",
+    position: "GP, Blockchain Builders · Coinbase Ventures Lead · Ex-Google & Blockstream · Stanford GSB",
+    image: "/steven.png",
     socials: {
-      linkedin: "https://www.linkedin.com/in/arnehartmann/",
+      linkedin: "https://www.linkedin.com/in/stevenwillinger/",
     },
   },
   {
@@ -63,14 +69,6 @@ const mentors: Mentor[] = [
     image: "/kun.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/elkun/",
-    },
-  },
-  {
-    name: "Steven Willinger",
-    position: "GP, Blockchain Builders · Coinbase Ventures Lead · Ex-Google & Blockstream · Stanford GSB",
-    image: "/steven.png",
-    socials: {
-      linkedin: "https://www.linkedin.com/in/stevenwillinger/",
     },
   },
   {
@@ -95,6 +93,22 @@ const mentors: Mentor[] = [
     image: "/jason.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/jason-alexander-scott/",
+    },
+  },
+  {
+    name: "Arne Hartmann",
+    position: "CFO at 0G Labs, Stanford GSB",
+    image: "/arne.png",
+    socials: {
+      linkedin: "https://www.linkedin.com/in/arnehartmann/",
+    },
+  },
+  {
+    name: "George",
+    position: "Strategic Partnership Head at 0G Labs",
+    image: "/george.jpeg",
+    socials: {
+      linkedin: "https://www.linkedin.com/in/georgemvarghese/",
     },
   },
 ];

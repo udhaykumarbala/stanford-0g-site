@@ -38,7 +38,7 @@ export default function Timeline() {
           className="text-center mb-20"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
-            8-Week <span className="text-gradient">Journey</span>
+            10-Week <span className="text-gradient">Journey</span>
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto mb-4">
             A structured program to take you from concept to launch
@@ -46,7 +46,7 @@ export default function Timeline() {
           <div className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full">
             <Calendar className="text-brand-purple-500" size={16} />
             <span className="text-sm text-gray-600 font-medium">
-              April 8 – June 9, 2025
+              April 12 – June 27, 2025
             </span>
           </div>
         </motion.div>

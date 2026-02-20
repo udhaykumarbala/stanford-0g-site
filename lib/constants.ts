@@ -21,8 +21,8 @@ export const NAV_LINKS = [
 
 export const PROGRAM_STATS = [
   { value: "10", label: "Teams Selected" },
-  { value: "$2M", label: "Investment Per Project" },
-  { value: "8", label: "Week Program" },
+  { value: "$2M", prefix: "Up to", label: "Investment Per Project" },
+  { value: "10", label: "Week Program" },
   { value: "1", label: "Demo Day" },
 ];
 
@@ -133,5 +133,5 @@ export const APPLY_CRITERIA = [
   "Building on or planning to build on 0G protocol",
   "Have a working MVP or strong prototype",
   "Committed founding team (2+ members)",
-  "Available for the full 8-week program (Apr 8 – Jun 9)",
+  "Available for the full 10-week program (Apr 12 – Jun 27)",
 ];

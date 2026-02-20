@@ -45,7 +45,7 @@ export default function PreviousProjects() {
             <span className="text-gradient">Projects</span>
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            Projects from earlier cohorts of the Blockchain Builders accelerator
+            Projects from earlier cohorts of the 0G Accelerator
           </p>
         </motion.div>
 
