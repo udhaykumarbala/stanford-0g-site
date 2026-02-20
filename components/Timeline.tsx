@@ -2,12 +2,13 @@
 
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import { useRef } from "react";
-import { Presentation, GraduationCap, Calendar } from "lucide-react";
+import { Presentation, GraduationCap, Calendar, MapPin } from "lucide-react";
 import { TIMELINE_DATA, MILESTONES } from "@/lib/constants";
 
 const milestoneIcons = {
   Presentation,
   GraduationCap,
+  MapPin,
 };
 
 export default function Timeline() {

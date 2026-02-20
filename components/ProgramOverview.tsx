@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Rocket, Target, Zap, MapPin } from "lucide-react";
+import { Rocket, Target, Zap } from "lucide-react";
 import Image from "next/image";
 
 export default function ProgramOverview() {
@@ -20,11 +20,6 @@ export default function ProgramOverview() {
       icon: Target,
       title: "Focused Curriculum",
       description: "6 modules covering everything you need",
-    },
-    {
-      icon: MapPin,
-      title: "Stanford IRL Event",
-      description: "In-person sessions at Stanford University",
     },
     {
       icon: Zap,

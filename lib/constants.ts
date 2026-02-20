@@ -93,6 +93,12 @@ export const TIMELINE_DATA = [
 
 export const MILESTONES = [
   {
+    title: "Stanford IRL Event",
+    description:
+      "In-person sessions and networking at Stanford University with mentors, investors, and fellow founders.",
+    icon: "MapPin",
+  },
+  {
     title: "Demo Day",
     description:
       "Present your company to investors and the Web3 community at our virtual Demo Day. Final OKR grading, debriefing, and retrospective.",
