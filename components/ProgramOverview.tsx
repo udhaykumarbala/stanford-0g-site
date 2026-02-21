@@ -50,35 +50,48 @@ export default function ProgramOverview() {
             </p>
 
             {/* Partner Logos */}
-            <div className="flex items-center gap-6 flex-wrap">
-              <div className="glass px-6 py-4 rounded-xl">
-                <Image
-                  src="/google.webp"
-                  alt="Google"
-                  width={120}
-                  height={50}
-                  className="h-10 w-auto"
-                />
+            <div className="space-y-4">
+              <div className="flex items-center gap-6 flex-wrap">
+                <div className="glass px-6 py-4 rounded-xl w-48 flex items-center justify-center">
+                  <Image
+                    src="/0G-Logo-Purple_Hero.svg"
+                    alt="0G"
+                    width={100}
+                    height={40}
+                    className="h-8 w-auto"
+                  />
+                </div>
+                <span className="text-gray-400 text-2xl">×</span>
+                <div className="glass px-6 py-4 rounded-xl w-48 flex items-center justify-center">
+                  <Image
+                    src="/blockchain-builder-logo.webp"
+                    alt="Blockchain Builders"
+                    width={140}
+                    height={40}
+                    className="h-8 w-auto"
+                  />
+                </div>
               </div>
-              <span className="text-gray-400 text-2xl">×</span>
-              <div className="glass px-6 py-4 rounded-xl">
-                <Image
-                  src="/0G-Logo-Purple_Hero.svg"
-                  alt="0G"
-                  width={100}
-                  height={50}
-                  className="h-10 w-auto"
-                />
-              </div>
-              <span className="text-gray-400 text-2xl">×</span>
-              <div className="glass px-6 py-4 rounded-xl">
-                <Image
-                  src="/blockchain-builder-logo.webp"
-                  alt="Blockchain Builders"
-                  width={180}
-                  height={50}
-                  className="h-10 w-auto"
-                />
+              <div className="flex items-center gap-6 flex-wrap">
+                <div className="glass px-6 py-4 rounded-xl w-48 flex items-center justify-center">
+                  <Image
+                    src="/google.webp"
+                    alt="Google"
+                    width={100}
+                    height={40}
+                    className="h-8 w-auto"
+                  />
+                </div>
+                <span className="text-gray-400 text-2xl">×</span>
+                <div className="glass px-6 py-4 rounded-xl w-48 flex items-center justify-center">
+                  <Image
+                    src="/privy.png"
+                    alt="Privy"
+                    width={100}
+                    height={40}
+                    className="h-8 w-auto"
+                  />
+                </div>
               </div>
             </div>
           </motion.div>
