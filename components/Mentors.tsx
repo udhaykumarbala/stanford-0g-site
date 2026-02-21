@@ -104,19 +104,19 @@ const mentors: Mentor[] = [
     },
   },
   {
-    name: "George",
-    position: "Strategic Partnership Head at 0G Labs",
-    image: "/george.jpeg",
-    socials: {
-      linkedin: "https://www.linkedin.com/in/georgemvarghese/",
-    },
-  },
-  {
     name: "Aytunç Yıldızlı",
     position: "CGO at 0G Labs",
     image: "/aytunc.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/aytun%C3%A7-y%C4%B1ld%C4%B1zl%C4%B1-317533169",
+    },
+  },
+  {
+    name: "George",
+    position: "Strategic Partnership Head at 0G Labs",
+    image: "/george.jpeg",
+    socials: {
+      linkedin: "https://www.linkedin.com/in/georgemvarghese/",
     },
   },
 ];
