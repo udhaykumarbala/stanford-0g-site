@@ -35,7 +35,7 @@ interface Mentor {
 const mentors: Mentor[] = [
   {
     name: "Michael Heinrich",
-    position: "CEO at 0G Labs, Stanford Alumnus",
+    position: "CEO at 0G Labs · Stanford Alumnus",
     image: "/michael.jpeg",
     socials: {
       linkedin: "https://www.linkedin.com/in/mheinrich/",
@@ -51,13 +51,13 @@ const mentors: Mentor[] = [
   },
   {
     name: "Weisi Yuen",
-    position: "CSO/CPO at 0G Labs, MIT MBA, Ex-McKinsey & Amazon",
+    position: "CSO/CPO at 0G Labs · MIT MBA · Ex-McKinsey & Amazon",
     image: "/weisi.avif",
     socials: {},
   },
   {
     name: "Steven Willinger",
-    position: "GP, Blockchain Builders · Coinbase Ventures Lead · Ex-Google & Blockstream · Stanford GSB",
+    position: "GP · Blockchain Builders · Coinbase Ventures Lead · Ex-Google & Blockstream · Stanford GSB",
     image: "/steven.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/stevenwillinger/",
@@ -65,7 +65,7 @@ const mentors: Mentor[] = [
   },
   {
     name: "Kun Peng",
-    position: "GP, Blockchain Builders · Founder Stanford Blockchain Accelerator & BASS · Advisor to 40+ Startups",
+    position: "GP · Blockchain Builders · Founder Stanford Blockchain Accelerator & BASS · Advisor to 40+ Startups",
     image: "/kun.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/elkun/",
@@ -73,7 +73,7 @@ const mentors: Mentor[] = [
   },
   {
     name: "Gil Rosen",
-    position: "GP, Blockchain Builders · Exited Founder (Eccella) · 50+ Angel Deals · Stanford GSB",
+    position: "GP · Blockchain Builders · Exited Founder (Eccella) · 50+ Angel Deals · Stanford GSB",
     image: "/gil.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/rosengil/",
@@ -81,7 +81,7 @@ const mentors: Mentor[] = [
   },
   {
     name: "Eric Peter",
-    position: "Venture Partner, AI Specialist · PM at Databricks & Google Cloud · Stanford GSB",
+    position: "Venture Partner · AI Specialist · PM at Databricks & Google Cloud · Stanford GSB",
     image: "/eric.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/ericcpeter/",
@@ -97,7 +97,7 @@ const mentors: Mentor[] = [
   },
   {
     name: "Arne Hartmann",
-    position: "CFO/COO at 0G Labs, Stanford GSB",
+    position: "CFO/COO at 0G Labs · Stanford GSB",
     image: "/arne.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/arnehartmann/",
@@ -105,7 +105,7 @@ const mentors: Mentor[] = [
   },
   {
     name: "Aytunç Yıldızlı",
-    position: "CGO at 0G Labs",
+    position: "CGO at 0G Labs · Ex-CEO Avax Foundation",
     image: "/aytunc.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/aytun%C3%A7-y%C4%B1ld%C4%B1zl%C4%B1-317533169",
