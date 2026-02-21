@@ -113,7 +113,7 @@ const mentors: Mentor[] = [
   },
   {
     name: "George",
-    position: "Strategic Partnership Head at 0G Labs",
+    position: "Strategic Partnership Lead at 0G Labs · Venture Partner · Stanford School of Medicine",
     image: "/george.jpeg",
     socials: {
       linkedin: "https://www.linkedin.com/in/georgemvarghese/",
