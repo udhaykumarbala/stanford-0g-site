@@ -39,7 +39,7 @@ export default function ProgramOverview() {
             transition={{ duration: 0.8 }}
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
-              The Premier <span className="text-gradient">Web3 Accelerator</span>
+              The Premier <span className="text-gradient">AI & Web3 Accelerator</span>
             </h2>
             <p className="text-gray-600 text-lg mb-8 leading-relaxed">
               Blockchain Builders, led by pioneers from Stanford's blockchain
@@ -72,24 +72,25 @@ export default function ProgramOverview() {
                   />
                 </div>
               </div>
-              <div className="flex items-center gap-6 flex-wrap">
-                <div className="glass px-6 py-4 rounded-xl w-48 flex items-center justify-center">
+              <p className="text-sm text-gray-500 font-medium mt-2">Partners</p>
+              <div className="flex items-center gap-4 flex-wrap">
+                <div className="glass px-4 py-3 rounded-xl w-36 flex items-center justify-center">
                   <Image
-                    src="/google.webp"
+                    src="/gc.png"
                     alt="Google"
-                    width={100}
-                    height={40}
-                    className="h-8 w-auto"
+                    width={80}
+                    height={30}
+                    className="h-6 w-auto"
                   />
                 </div>
-                <span className="text-gray-400 text-2xl">×</span>
-                <div className="glass px-6 py-4 rounded-xl w-48 flex items-center justify-center">
+                <span className="text-gray-400 text-xl">×</span>
+                <div className="glass px-4 py-3 rounded-xl w-36 flex items-center justify-center">
                   <Image
                     src="/privy.png"
                     alt="Privy"
-                    width={100}
-                    height={40}
-                    className="h-8 w-auto"
+                    width={80}
+                    height={30}
+                    className="h-6 w-auto"
                   />
                 </div>
               </div>
