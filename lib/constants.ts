@@ -17,6 +17,7 @@ export const NAV_LINKS = [
   { label: "Program", href: "#program" },
   { label: "Timeline", href: "#timeline" },
   { label: "Benefits", href: "#benefits" },
+  { label: "Mentors", href: "#mentors" },
 ];
 
 export const PROGRAM_STATS = [

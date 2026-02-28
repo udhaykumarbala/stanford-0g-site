@@ -41,6 +41,7 @@ export default function Navbar() {
             alt="0G Apollo Program"
             width={200}
             height={50}
+            priority
             className="h-10 w-auto"
           />
         </a>
@@ -70,6 +71,7 @@ export default function Navbar() {
         <button
           className="md:hidden text-gray-800"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          aria-label="Toggle menu"
         >
           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>

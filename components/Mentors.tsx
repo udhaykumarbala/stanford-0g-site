@@ -195,6 +195,8 @@ export default function Mentors() {
                       src={mentor.image}
                       alt={mentor.name}
                       fill
+                      loading="lazy"
+                      sizes="128px"
                       className="object-cover"
                     />
                   )}
