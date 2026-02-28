@@ -51,46 +51,46 @@ export default function ProgramOverview() {
 
             {/* Partner Logos */}
             <div className="space-y-4">
-              <div className="flex items-center gap-6 flex-wrap">
-                <div className="glass px-6 py-4 rounded-xl w-48 flex items-center justify-center">
+              <div className="flex items-center gap-4">
+                <div className="glass px-5 py-3 rounded-xl flex items-center justify-center">
                   <Image
                     src="/0G-Logo-Purple_Hero.svg"
                     alt="0G"
-                    width={100}
-                    height={40}
-                    className="h-8 w-auto"
+                    width={80}
+                    height={36}
+                    className="h-7 w-auto"
                   />
                 </div>
-                <span className="text-gray-400 text-2xl">×</span>
-                <div className="glass px-6 py-4 rounded-xl w-48 flex items-center justify-center">
+                <span className="text-gray-400 text-xl">×</span>
+                <div className="glass px-5 py-3 rounded-xl flex items-center justify-center">
                   <Image
                     src="/blockchain-builder-logo.webp"
                     alt="Blockchain Builders"
-                    width={140}
-                    height={40}
-                    className="h-8 w-auto"
+                    width={120}
+                    height={36}
+                    className="h-7 w-auto"
                   />
                 </div>
               </div>
               <p className="text-sm text-gray-500 font-medium mt-2">Partners</p>
-              <div className="flex items-center gap-4 flex-wrap">
-                <div className="glass px-4 py-3 rounded-xl w-36 flex items-center justify-center">
+              <div className="flex items-center gap-4">
+                <div className="glass px-4 py-2 rounded-xl flex items-center justify-center">
                   <Image
                     src="/gc.png"
                     alt="Google"
-                    width={80}
-                    height={30}
-                    className="h-6 w-auto"
+                    width={70}
+                    height={28}
+                    className="h-5 w-auto"
                   />
                 </div>
-                <span className="text-gray-400 text-xl">×</span>
-                <div className="glass px-4 py-3 rounded-xl w-36 flex items-center justify-center">
+                <span className="text-gray-400 text-lg">×</span>
+                <div className="glass px-4 py-2 rounded-xl flex items-center justify-center">
                   <Image
                     src="/privy.png"
                     alt="Privy"
-                    width={80}
-                    height={30}
-                    className="h-6 w-auto"
+                    width={70}
+                    height={28}
+                    className="h-5 w-auto"
                   />
                 </div>
               </div>
