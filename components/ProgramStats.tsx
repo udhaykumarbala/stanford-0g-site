@@ -27,7 +27,7 @@ export default function ProgramStats() {
                 )}
               </div>
               <div className="text-4xl md:text-5xl font-bold text-gradient mb-2">
-                {stat.value}
+                {stat.value}{"prefix" in stat && stat.prefix && <span className="text-lg align-super">*</span>}
               </div>
               <div className="text-gray-600 font-medium">{stat.label}</div>
             </motion.div>

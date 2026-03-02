@@ -59,6 +59,13 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} 0G Labs. All rights reserved.
           </p>
         </div>
+
+        {/* Disclaimer */}
+        <div className="mt-8 pt-6 border-t border-gray-200/50">
+          <p className="text-gray-400 text-xs text-center">
+            *Investment amounts are subject to due diligence, project evaluation, and program terms. Actual funding may vary.
+          </p>
+        </div>
       </div>
     </footer>
   );

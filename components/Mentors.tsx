@@ -119,6 +119,30 @@ const mentors: Mentor[] = [
       linkedin: "https://www.linkedin.com/in/georgemvarghese/",
     },
   },
+  {
+    name: "Madeleine Charity",
+    position: "Product Engineer at Privy",
+    image: "/Madeleine.png",
+    socials: {
+      linkedin: "https://www.linkedin.com/in/madeleine-charity/",
+    },
+  },
+  {
+    name: "Patrick Chang",
+    position: "Founder & Managing Partner · Dispersion Capital",
+    image: "/patrick.png",
+    socials: {
+      linkedin: "https://www.linkedin.com/in/patricknchang/",
+    },
+  },
+  {
+    name: "Bon S",
+    position: "Field CTO at Google · Driving AI/ML & Web3 Innovation",
+    image: "/bon.jpeg",
+    socials: {
+      linkedin: "https://www.linkedin.com/in/bon-s-12010929/",
+    },
+  },
 ];
 
 export default function Mentors() {
