@@ -8,7 +8,7 @@ export default function Hero() {
   const { scrollY } = useScroll();
   const scrollIndicatorOpacity = useTransform(scrollY, [0, 100], [1, 0]);
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24">
       {/* Animated Background Orbs */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
@@ -56,37 +56,38 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          {/* Badge */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.2 }}
-            className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full mb-8"
-          >
-            <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-purple-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-brand-purple-500"></span>
-            </span>
-            <span className="text-sm text-gray-600 font-medium">Applications Open</span>
-          </motion.div>
-
-          {/* Headline */}
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight text-gray-900">
-            0G Apollo Program<br /><span className="text-gradient">AI Accelerator</span>
+          {/* Title */}
+          <h1 className="text-5xl md:text-7xl font-bold mb-4 leading-tight text-gray-900">
+            Apollo, the AI Accelerator
           </h1>
 
-          {/* Subheadline */}
-          <p className="text-xl md:text-2xl text-gray-600 mb-3 max-w-2xl mx-auto">
-            By Blockchain Builders
+          {/* Subtitle */}
+          <p className="text-5xl md:text-7xl mb-6 mx-auto text-gradient font-bold">
+            Powered by 0G and Stanford Builders
           </p>
 
-          {/* Stanford Subtitle */}
-          <p className="text-base md:text-lg text-gray-500 mb-12 max-w-2xl mx-auto font-medium italic">
-            Startups the Silicon Valley way, led by Stanford veterans
+          {/* Description */}
+          <p className="text-base md:text-lg text-gray-500 mb-10 max-w-3xl mx-auto leading-relaxed italic">
+            0G Apollo is an exclusive builder program supported by Blockchain Builders Fund
+            (led by Stanford veterans) for developers and protocols building on the
+            world&apos;s first decentralized AI data network.
           </p>
+
+          {/* Video */}
+          <div className="max-w-2xl mx-auto mb-10 rounded-2xl overflow-hidden shadow-2xl shadow-brand-purple-500/20 border border-brand-purple-200/30 bg-white">
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="w-[calc(100%+6px)] h-auto block -ml-[3px]"
+            >
+              <source src="/0G_Apollo_Video.mp4" type="video/mp4" />
+            </video>
+          </div>
 
           {/* CTAs */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col items-center gap-4">
             <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -97,14 +98,13 @@ export default function Hero() {
             >
               Apply Now
             </motion.a>
-            <motion.a
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              href="#program"
-              className="glass glass-hover text-gray-700 px-8 py-4 rounded-full font-medium text-lg"
-            >
-              Learn More
-            </motion.a>
+            <div className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-purple-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-brand-purple-500"></span>
+              </span>
+              <span className="text-sm text-gray-600 font-medium">Application deadline: 10th April</span>
+            </div>
           </div>
         </motion.div>
       </div>

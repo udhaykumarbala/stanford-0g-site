@@ -2,12 +2,10 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import ProgramStats from "@/components/ProgramStats";
 import ProgramOverview from "@/components/ProgramOverview";
-import WhatYouBuild from "@/components/WhatYouBuild";
-import Timeline from "@/components/Timeline";
-import PreviousProjects from "@/components/PreviousProjects";
 import Benefits from "@/components/Benefits";
-import WhoShouldApply from "@/components/WhoShouldApply";
+import Timeline from "@/components/Timeline";
 import Mentors from "@/components/Mentors";
+import FAQ from "@/components/FAQ";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 
@@ -18,12 +16,10 @@ export default function Home() {
       <Hero />
       <ProgramStats />
       <ProgramOverview />
-      <WhatYouBuild />
-      <Timeline />
-      {/* <PreviousProjects /> */}
       <Benefits />
-      <WhoShouldApply />
+      <Timeline />
       <Mentors />
+      <FAQ />
       <CTA />
       <Footer />
     </main>

@@ -14,10 +14,10 @@ export const COLORS = {
 
 export const NAV_LINKS = [
   { label: "About", href: "#about" },
-  { label: "Program", href: "#program" },
-  { label: "Timeline", href: "#timeline" },
   { label: "Benefits", href: "#benefits" },
+  { label: "Timeline", href: "#timeline" },
   { label: "Mentors", href: "#mentors" },
+  { label: "FAQ", href: "#faq" },
 ];
 
 export const PROGRAM_STATS = [
