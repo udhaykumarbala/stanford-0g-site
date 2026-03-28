@@ -17,9 +17,9 @@ export default function Home() {
       <ProgramStats />
       <ProgramOverview />
       <Benefits />
-      <Timeline />
       <Mentors />
       <FAQ />
+      <Timeline />
       <CTA />
       <Footer />
     </main>
