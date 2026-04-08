@@ -140,5 +140,5 @@ export const APPLY_CRITERIA = [
   "Building on or planning to build on 0G protocol",
   "Have a working MVP or strong prototype",
   "Committed founding team (2+ members)",
-  "Available for the full 10-week program (Apr 12 – Jun 27)",
+  "Available for the full 10-week program (Apr 28 – Jul 7)",
 ];

@@ -47,7 +47,7 @@ export default function Timeline() {
           <div className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full">
             <Calendar className="text-brand-purple-500" size={16} />
             <span className="text-sm text-gray-600 font-medium">
-              April 12 – June 27, 2026
+              April 28 – July 7, 2026
             </span>
           </div>
         </motion.div>
