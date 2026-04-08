@@ -51,7 +51,7 @@ export default function ProgramOverview() {
 
             {/* Partner Logos */}
             <div className="space-y-4">
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-4 flex-wrap">
                 <div className="glass px-5 py-3 rounded-xl flex items-center justify-center">
                   <Image
                     src="/0G-Logo-Purple_Hero.svg"
@@ -71,6 +71,21 @@ export default function ProgramOverview() {
                     className="h-7 w-auto"
                   />
                 </div>
+                <span className="text-gray-400 text-xl">×</span>
+                <a
+                  href="https://sba.sites.stanford.edu/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="glass px-5 py-3 rounded-xl flex items-center justify-center hover:shadow-md transition-shadow"
+                >
+                  <Image
+                    src="/sba-logo.png"
+                    alt="Stanford Blockchain Accelerator"
+                    width={200}
+                    height={62}
+                    className="h-7 w-auto"
+                  />
+                </a>
               </div>
               <p className="text-sm text-gray-500 font-medium mt-2">Partners</p>
               <div className="flex items-center gap-4">

@@ -70,8 +70,8 @@ export default function RootLayout({
                 {
                   "@type": "Event",
                   name: "0G Apollo Program - AI Accelerator",
-                  startDate: "2025-04-12",
-                  endDate: "2025-06-27",
+                  startDate: "2026-04-12",
+                  endDate: "2026-06-27",
                   eventAttendanceMode: "https://schema.org/MixedEventAttendanceMode",
                   description: "10-week accelerator from Stanford-backed Blockchain Builders and 0G protocol for Web3 founders building the future of AI infrastructure",
                   organizer: {
