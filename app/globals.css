@@ -57,6 +57,14 @@ body {
     box-shadow: 0 8px 32px rgba(146, 0, 225, 0.06);
   }
 
+  .scrollbar-hide {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
   .glass-hover:hover {
     border-color: rgba(146, 0, 225, 0.3);
     box-shadow: 0 12px 40px rgba(146, 0, 225, 0.12);

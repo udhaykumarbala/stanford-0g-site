@@ -321,7 +321,8 @@ export default function Projects() {
           </div>
 
           {/* Category pills */}
-          <div className="flex flex-wrap gap-1 glass rounded-full p-1.5">
+          <div className="-mx-6 px-6 overflow-x-auto scrollbar-hide lg:mx-0 lg:px-0 lg:overflow-visible">
+            <div className="inline-flex flex-nowrap gap-1 glass rounded-full p-1.5">
             {CATEGORIES.map((cat) => {
               const isActive = filter === cat;
               const count =
@@ -366,6 +367,7 @@ export default function Projects() {
                 </button>
               );
             })}
+            </div>
           </div>
         </motion.div>
 
@@ -391,12 +393,56 @@ export default function Projects() {
           ))}
         </motion.div>
 
-        {/* Master / Detail */}
+        {/* Mobile: simple project list */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className="lg:hidden space-y-3"
+        >
+          {filtered.map((p) => (
+            <a
+              key={p.id}
+              href={p.website}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block glass glass-hover rounded-2xl p-4"
+            >
+              <div className="flex items-center gap-4">
+                <div
+                  className={`w-12 h-12 rounded-xl bg-gradient-to-br ${p.gradient} overflow-hidden flex items-center justify-center flex-shrink-0`}
+                >
+                  <Image
+                    src={p.logo}
+                    alt={`${p.name} logo`}
+                    width={48}
+                    height={48}
+                    className="object-contain w-full h-full p-1.5"
+                  />
+                </div>
+                <div className="flex-1 min-w-0">
+                  <div className="font-bold text-gray-900 truncate">
+                    {p.name}
+                  </div>
+                  <div className="text-sm text-gray-500 truncate">
+                    {p.oneLiner}
+                  </div>
+                  <div className="text-xs text-brand-purple-500 font-mono mt-1 inline-flex items-center gap-1">
+                    <ArrowUpRight size={11} />
+                    {p.websiteLabel}
+                  </div>
+                </div>
+              </div>
+            </a>
+          ))}
+        </motion.div>
+
+        {/* Desktop: Master / Detail */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, delay: 0.3 }}
-          className="grid lg:grid-cols-[1fr_400px] gap-8"
+          className="hidden lg:grid lg:grid-cols-[1fr_400px] gap-8"
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
         >
