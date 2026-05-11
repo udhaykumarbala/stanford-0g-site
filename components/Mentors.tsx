@@ -143,6 +143,68 @@ const mentors: Mentor[] = [
       linkedin: "https://www.linkedin.com/in/bon-s-12010929/",
     },
   },
+  {
+    name: "Peter Norvig",
+    position: "AI Legend · Stanford · Ex-Google Director of Research",
+    image: "/peter-norvig.jpeg",
+    socials: {
+      linkedin: "https://www.linkedin.com/in/pnorvig/",
+    },
+  },
+  {
+    name: "Bruno Rodrigues",
+    position: "Cloud Architect & AI Ambassador at Google for Startups · GCP Architecture & Optimization",
+    image: "/mentors/placeholder-bruno-rodrigues.png",
+    socials: {
+      linkedin: "https://www.linkedin.com/in/bruno-rodrigues-81234888/",
+    },
+  },
+  {
+    name: "Anand Iyer",
+    position: "Managing Partner · Canonical",
+    image: "/anand-iyer.jpeg",
+    socials: {
+      linkedin: "https://www.linkedin.com/in/anandiyer/",
+    },
+  },
+  {
+    name: "Ben Biran",
+    position: "Founder/CTO at ACRONYM · Ex-Director of Eng at Zapier & Plaid",
+    image: "/ben.jpeg",
+    socials: {
+      linkedin: "https://www.linkedin.com/in/benbiran/",
+    },
+  },
+  {
+    name: "Scott Shi",
+    position: "CTO & Co-founder · KiteAI",
+    image: "/scott-shi.jpg",
+    socials: {
+      twitter: "https://x.com/scottshics",
+    },
+  },
+  {
+    name: "Marcus Hølland Eikeland",
+    position: "Director of Programs at LUMO Labs · Accelerators & Fundraising",
+    image: "/marcus.jpeg",
+    socials: {
+      linkedin: "https://www.linkedin.com/in/mhollandeikeland/",
+    },
+  },
+  {
+    name: "Thomas Hay",
+    position: "Senior Staff Product Manager, Decentralized Infrastructure · Consensys",
+    image: "/thomas-hay.jpeg",
+    socials: {
+      linkedin: "https://www.linkedin.com/in/thomas-hay/",
+    },
+  },
+  {
+    name: "Alex",
+    position: "Hack VC",
+    image: "/mentors/placeholder-alex.png",
+    socials: {},
+  },
 ];
 
 export default function Mentors() {

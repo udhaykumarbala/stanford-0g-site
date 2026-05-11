@@ -17,6 +17,7 @@ export const NAV_LINKS = [
   { label: "Benefits", href: "#benefits" },
   { label: "Timeline", href: "#timeline" },
   { label: "Mentors", href: "#mentors" },
+  { label: "Projects", href: "#projects" },
   { label: "FAQ", href: "#faq" },
 ];
 
