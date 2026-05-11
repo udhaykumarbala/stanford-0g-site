@@ -27,3 +27,6 @@ info.md
 
 .cursorrules
 .claude
+
+# TypeScript incremental build cache
+*.tsbuildinfo

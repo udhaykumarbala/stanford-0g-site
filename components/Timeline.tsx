@@ -47,7 +47,7 @@ export default function Timeline() {
           <div className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full">
             <Calendar className="text-brand-purple-500" size={16} />
             <span className="text-sm text-gray-600 font-medium">
-              April 28 – July 7, 2026
+              April 28 – June 25, 2026
             </span>
           </div>
         </motion.div>
@@ -111,6 +111,7 @@ export default function Timeline() {
                 milestoneIcons[
                   milestone.icon as keyof typeof milestoneIcons
                 ];
+              const date = (milestone as { date?: string }).date;
               return (
                 <motion.div
                   key={index}
@@ -130,6 +131,12 @@ export default function Timeline() {
                   <h3 className="text-2xl font-bold text-gray-900 mb-3">
                     {milestone.title}
                   </h3>
+                  {date && (
+                    <div className="inline-flex items-center gap-2 bg-brand-purple-500/10 text-brand-purple-500 px-3 py-1.5 rounded-full text-sm font-medium mb-3">
+                      <Calendar size={14} />
+                      {date}
+                    </div>
+                  )}
                   <p className="text-gray-600">{milestone.description}</p>
                 </motion.div>
               );

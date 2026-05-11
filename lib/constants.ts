@@ -107,10 +107,11 @@ export const MILESTONES = [
     icon: "Presentation",
   },
   {
-    title: "Graduation",
+    title: "Graduation Party",
     description:
       "Celebrate your achievements, connect with the alumni network, and kick off the next chapter of your venture.",
     icon: "GraduationCap",
+    date: "July 29, 2026",
   },
 ];
 
@@ -141,5 +142,5 @@ export const APPLY_CRITERIA = [
   "Building on or planning to build on 0G protocol",
   "Have a working MVP or strong prototype",
   "Committed founding team (2+ members)",
-  "Available for the full 10-week program (Apr 28 – Jul 7)",
+  "Available for the full program (Apr 28 – Jun 25)",
 ];
