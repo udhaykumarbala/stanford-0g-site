@@ -19,9 +19,9 @@ export default function Home() {
         <Hero />
         <ProgramStats />
         <ProgramOverview />
+        <Projects />
         <Benefits />
         <Mentors />
-        <Projects />
         <FAQ />
         <Timeline />
         <CTA />
