@@ -4,10 +4,12 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { ArrowRight } from "lucide-react";
+import { useApplyClosed } from "./ApplyClosedDialog";
 
 export default function CTA() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const { open: openApplyClosed } = useApplyClosed();
 
   return (
     <section id="apply" className="py-32 relative overflow-hidden" ref={ref}>
@@ -53,17 +55,16 @@ export default function CTA() {
           </p>
 
           {/* CTA Button */}
-          <motion.a
+          <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            href="https://forms.gle/TYM4tZaD1gYrDVdS9"
-            target="_blank"
-            rel="noopener noreferrer"
+            type="button"
+            onClick={openApplyClosed}
             className="inline-flex items-center gap-3 bg-gradient-to-r from-brand-purple-500 to-brand-purple-400 text-white px-10 py-5 rounded-full font-medium text-xl hover:shadow-2xl hover:shadow-brand-purple-500/40 transition-all cursor-pointer"
           >
             Apply Now
             <ArrowRight size={24} />
-          </motion.a>
+          </motion.button>
 
           {/* Contact */}
           <p className="text-gray-500 mt-8">

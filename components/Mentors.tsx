@@ -202,8 +202,10 @@ const mentors: Mentor[] = [
   {
     name: "Alex",
     position: "Hack VC",
-    image: "/mentors/placeholder-alex.png",
-    socials: {},
+    image: "/alex.jpeg",
+    socials: {
+      linkedin: "https://www.linkedin.com/in/alexpack/",
+    },
   },
 ];
 

@@ -5,10 +5,12 @@ import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
 import { NAV_LINKS } from "@/lib/constants";
+import { useApplyClosed } from "./ApplyClosedDialog";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { open: openApplyClosed } = useApplyClosed();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -57,14 +59,13 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
-          <a
-            href="https://forms.gle/TYM4tZaD1gYrDVdS9"
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            type="button"
+            onClick={openApplyClosed}
             className="bg-gradient-to-r from-brand-purple-500 to-brand-purple-400 text-white px-6 py-2.5 rounded-full text-sm font-medium hover:shadow-lg hover:shadow-brand-purple-500/25 transition-all cursor-pointer"
           >
             Apply Now
-          </a>
+          </button>
         </div>
 
         {/* Mobile Menu Button */}
@@ -95,15 +96,16 @@ export default function Navbar() {
                 {link.label}
               </a>
             ))}
-            <a
-              href="https://forms.gle/TYM4tZaD1gYrDVdS9"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-gradient-to-r from-brand-purple-500 to-brand-purple-400 text-white px-6 py-3 rounded-full text-center font-medium mt-2 cursor-pointer block"
-              onClick={() => setIsMobileMenuOpen(false)}
+            <button
+              type="button"
+              className="bg-gradient-to-r from-brand-purple-500 to-brand-purple-400 text-white px-6 py-3 rounded-full text-center font-medium mt-2 cursor-pointer block w-full"
+              onClick={() => {
+                setIsMobileMenuOpen(false);
+                openApplyClosed();
+              }}
             >
               Apply Now
-            </a>
+            </button>
           </div>
         </motion.div>
       )}
