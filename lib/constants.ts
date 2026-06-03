@@ -15,6 +15,7 @@ export const COLORS = {
 export const NAV_LINKS = [
   { label: "About", href: "#about" },
   { label: "Benefits", href: "#benefits" },
+  { label: "Perks", href: "#perks" },
   { label: "Timeline", href: "#timeline" },
   { label: "Mentors", href: "#mentors" },
   { label: "Projects", href: "#projects" },
