@@ -35,7 +35,10 @@ export async function POST(req: NextRequest) {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email: normalized, timestamp, source: "apollo-cohort-2-waitlist" }),
       });
-      captured = res.ok;
+      // Apps Script web apps return HTTP 200 even on script errors, so
+      // also check the response body's ok flag when it parses as JSON.
+      const body = await res.json().catch(() => null);
+      captured = res.ok && body?.ok !== false;
     } catch (err) {
       console.error("waitlist webhook failed:", err);
     }
