@@ -4,12 +4,12 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { ArrowRight } from "lucide-react";
-import { useApplyClosed } from "./ApplyClosedDialog";
+import { useWaitlist } from "./WaitlistDialog";
 
 export default function CTA() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
-  const { open: openApplyClosed } = useApplyClosed();
+  const { open: openWaitlist } = useWaitlist();
 
   return (
     <section id="apply" className="py-32 relative overflow-hidden" ref={ref}>
@@ -50,8 +50,8 @@ export default function CTA() {
             Ready to <span className="text-gradient">Accelerate</span>?
           </h2>
           <p className="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
-            Join the next cohort of founders building the future of
-            decentralized AI infrastructure on 0G.
+            Cohort 2 applications are opening soon. Join the waitlist and be
+            the first to know when they go live.
           </p>
 
           {/* CTA Button */}
@@ -59,7 +59,7 @@ export default function CTA() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             type="button"
-            onClick={openApplyClosed}
+            onClick={openWaitlist}
             className="inline-flex items-center gap-3 bg-gradient-to-r from-brand-purple-500 to-brand-purple-400 text-white px-10 py-5 rounded-full font-medium text-xl hover:shadow-2xl hover:shadow-brand-purple-500/40 transition-all cursor-pointer"
           >
             Apply Now

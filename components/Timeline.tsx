@@ -41,15 +41,9 @@ export default function Timeline() {
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
             10-Week <span className="text-gradient">Journey</span>
           </h2>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto mb-4">
+          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
             A structured program to take you from concept to launch
           </p>
-          <div className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full">
-            <Calendar className="text-brand-purple-500" size={16} />
-            <span className="text-sm text-gray-600 font-medium">
-              April 28 – June 25, 2026
-            </span>
-          </div>
         </motion.div>
 
         {/* Timeline */}

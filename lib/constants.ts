@@ -13,6 +13,7 @@ export const COLORS = {
 };
 
 export const NAV_LINKS = [
+  { label: "Highlights", href: "#highlights" },
   { label: "About", href: "#about" },
   { label: "Benefits", href: "#benefits" },
   { label: "Perks", href: "#perks" },
@@ -112,7 +113,6 @@ export const MILESTONES = [
     description:
       "Celebrate your achievements, connect with the alumni network, and kick off the next chapter of your venture.",
     icon: "GraduationCap",
-    date: "July 29, 2026",
   },
 ];
 
@@ -143,5 +143,62 @@ export const APPLY_CRITERIA = [
   "Building on or planning to build on 0G protocol",
   "Have a working MVP or strong prototype",
   "Committed founding team (2+ members)",
-  "Available for the full program (Apr 28 – Jun 25)",
+  "Available for the full 10-week program",
+];
+
+export const DEMO_DAY_RECORDING_URL = "https://youtu.be/cGtOOdPvSaQ";
+
+export const COHORT1_STATS = [
+  { value: "220+", label: "Applications for 10 spots" },
+  {
+    value: "100+",
+    label: "Intro requests from investors, enterprises, and partners since Demo Day",
+  },
+  { value: "US$1.5M", label: "Raised by alumni within 30 days of graduation" },
+  { value: "10/10", label: "Teams at Demo Day" },
+];
+
+export const COHORT1_TESTIMONIALS = [
+  {
+    quote:
+      "The Apollo and 0G team gets genuinely hands-on. We received detailed feedback across product, GTM, and fundraising, not just high-level advice. The program's partner network provided support at every step, and 0G actively introduced investors to our team throughout.",
+    name: "Justin Bebis",
+    role: "Founder, UV Labs",
+  },
+  {
+    quote:
+      "What I appreciated about the Apollo program was the range of exceptional people around the program, from the Blockchain Builders Fund team to mentors from Google and other companies and funds we have been introduced to. The program gave us great opportunities to present at events, while the 0G team has been amazing in organizing the program and are really supportive well after Demo Day!",
+    name: "Alex Radu",
+    role: "Co-founder, Pulsar Money",
+  },
+  {
+    quote:
+      "The Apollo mentors have been excellent on GTM, and the events the team organized generated real client leads for us. This is exactly what you want from a program.",
+    name: "Jon Ozdoruk",
+    role: "Co-Founder, DSALTA",
+  },
+  {
+    quote:
+      "Apollo gave us strong support from its mentors, and the 0G team went even further — they use our product at their own events. For a company building a professional network for agents, being embedded in this ecosystem is exactly the right place to grow.",
+    name: "David Shao",
+    role: "Co-Founder, Walnut AI",
+  },
+];
+
+export const COHORT1_PHOTOS = [
+  {
+    src: "/cohort1/0P7A2967.jpg",
+    alt: "Cohort 1 group photo at Stanford University",
+    caption: "Cohort group photo",
+  },
+  {
+    src: "/cohort1/20260729-apollo-219.jpg",
+    alt: "Graduation day session at Stanford",
+    caption: "Stanford ceremony",
+  },
+  {
+    src: "/cohort1/20260729-apollo-769.jpg",
+    alt: "Cohort 1 graduation dinner toast",
+    caption: "Graduation dinner",
+  },
 ];

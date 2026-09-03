@@ -316,7 +316,7 @@ export default function Projects() {
               Apollo Program
             </span>
             <h2 className="text-4xl md:text-5xl font-bold mt-3 text-gray-900 leading-tight">
-              Meet the <span className="text-gradient">2026 cohort</span>.
+              Meet <span className="text-gradient">Cohort 1</span> (Spring 2026).
             </h2>
           </div>
 

@@ -5,12 +5,12 @@ import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
 import { NAV_LINKS } from "@/lib/constants";
-import { useApplyClosed } from "./ApplyClosedDialog";
+import { useWaitlist } from "./WaitlistDialog";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const { open: openApplyClosed } = useApplyClosed();
+  const { open: openWaitlist } = useWaitlist();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -61,7 +61,7 @@ export default function Navbar() {
           ))}
           <button
             type="button"
-            onClick={openApplyClosed}
+            onClick={openWaitlist}
             className="bg-gradient-to-r from-brand-purple-500 to-brand-purple-400 text-white px-6 py-2.5 rounded-full text-sm font-medium hover:shadow-lg hover:shadow-brand-purple-500/25 transition-all cursor-pointer"
           >
             Apply Now
@@ -101,7 +101,7 @@ export default function Navbar() {
               className="bg-gradient-to-r from-brand-purple-500 to-brand-purple-400 text-white px-6 py-3 rounded-full text-center font-medium mt-2 cursor-pointer block w-full"
               onClick={() => {
                 setIsMobileMenuOpen(false);
-                openApplyClosed();
+                openWaitlist();
               }}
             >
               Apply Now

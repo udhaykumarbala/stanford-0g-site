@@ -4,8 +4,14 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import { Plus, Minus } from "lucide-react";
+import { useWaitlist } from "./WaitlistDialog";
 
-const FAQ_DATA = [
+type FAQEntry = {
+  question: string;
+  answer: React.ReactNode;
+};
+
+const FAQ_DATA: FAQEntry[] = [
   {
     question: "Who is the 0G Apollo Program for?",
     answer:
@@ -31,7 +37,50 @@ const FAQ_DATA = [
     answer:
       "The 10-week program is primarily remote, except for an in-person Demo Day towards the end of the program.",
   },
+  {
+    question: "When does Cohort 2 start?",
+    answer:
+      "Cohort 2 kicks off in November 2026 — the exact date is to be confirmed.",
+  },
+  {
+    question: "When do applications open?",
+    answer: <ApplicationsOpenAnswer />,
+  },
+  {
+    question: "What happened with Cohort 1?",
+    answer: (
+      <>
+        Cohort 1 wrapped up in July 2026: 10 teams graduated at Stanford,
+        alumni raised US$1.5M within 30 days of graduation, and every team
+        presented at Demo Day. Check out the{" "}
+        <a
+          href="#highlights"
+          className="text-brand-purple-500 hover:text-brand-purple-400 font-medium underline underline-offset-4 transition-colors"
+        >
+          Cohort 1 highlights
+        </a>{" "}
+        for the full story, photos, and the Demo Day recording.
+      </>
+    ),
+  },
 ];
+
+function ApplicationsOpenAnswer() {
+  const { open } = useWaitlist();
+  return (
+    <>
+      Soon!{" "}
+      <button
+        type="button"
+        onClick={open}
+        className="text-brand-purple-500 hover:text-brand-purple-400 font-medium underline underline-offset-4 transition-colors"
+      >
+        Join the waitlist
+      </button>{" "}
+      to be notified the moment Cohort 2 applications open.
+    </>
+  );
+}
 
 function FAQItem({
   item,

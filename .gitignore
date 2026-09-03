@@ -30,3 +30,6 @@ info.md
 
 # TypeScript incremental build cache
 *.tsbuildinfo
+
+# Waitlist email captures (local dev)
+/data/
