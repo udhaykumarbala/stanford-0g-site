@@ -3,12 +3,12 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowDown } from "lucide-react";
 import DotGrid from "./DotGrid";
-import { useApplyClosed } from "./ApplyClosedDialog";
+import { useWaitlist } from "./WaitlistDialog";
 
 export default function Hero() {
   const { scrollY } = useScroll();
   const scrollIndicatorOpacity = useTransform(scrollY, [0, 100], [1, 0]);
-  const { open: openApplyClosed } = useApplyClosed();
+  const { open: openWaitlist } = useWaitlist();
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24">
       {/* Animated Background Orbs */}
@@ -94,16 +94,17 @@ export default function Hero() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               type="button"
-              onClick={openApplyClosed}
+              onClick={openWaitlist}
               className="bg-gradient-to-r from-brand-purple-500 to-brand-purple-400 text-white px-8 py-4 rounded-full font-medium text-lg hover:shadow-xl hover:shadow-brand-purple-500/30 transition-all cursor-pointer inline-block"
             >
               Apply Now
             </motion.button>
             <div className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full">
               <span className="relative flex h-2 w-2">
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-gray-400"></span>
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-purple-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-brand-purple-500"></span>
               </span>
-              <span className="text-sm text-gray-600 font-medium">Apollo applications closed — apply via Akindo</span>
+              <span className="text-sm text-gray-600 font-medium">Cohort 2 applications opening soon</span>
             </div>
           </div>
         </motion.div>
