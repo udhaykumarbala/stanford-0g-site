@@ -70,6 +70,40 @@ body {
     box-shadow: 0 12px 40px rgba(146, 0, 225, 0.12);
   }
 
+  /* Testimonial marquee: continuous, seamless horizontal scroll */
+  .marquee {
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+  }
+
+  .marquee-track {
+    animation: marquee-scroll 60s linear infinite;
+    will-change: transform;
+  }
+
+  .marquee:hover .marquee-track,
+  .marquee:focus-within .marquee-track {
+    animation-play-state: paused;
+  }
+
+  @keyframes marquee-scroll {
+    from { transform: translate3d(0, 0, 0); }
+    /* Track holds two copies + one gap between them; shift exactly one copy */
+    to { transform: translate3d(calc(-50% - 0.75rem), 0, 0); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .marquee-track {
+      animation: none;
+    }
+    .marquee {
+      overflow-x: auto;
+      mask-image: none;
+      -webkit-mask-image: none;
+    }
+  }
+
   .text-gradient {
     background: linear-gradient(135deg, #9200E1 0%, #B75FFF 100%);
     -webkit-background-clip: text;
