@@ -69,11 +69,11 @@ export default function RootLayout({
                 },
                 {
                   "@type": "Event",
-                  name: "0G Apollo Program - AI Accelerator",
-                  startDate: "2026-04-28",
-                  endDate: "2026-07-07",
+                  name: "0G Apollo Program - AI Accelerator (Cohort 2)",
+                  // Cohort 2 kicks off November 2026; exact date TBC
+                  startDate: "2026-11",
                   eventAttendanceMode: "https://schema.org/MixedEventAttendanceMode",
-                  description: "10-week accelerator from Stanford-backed Blockchain Builders and 0G protocol for Web3 founders building the future of AI infrastructure",
+                  description: "10-week accelerator from Stanford-backed Blockchain Builders and 0G protocol for Web3 founders building the future of AI infrastructure. Cohort 2 applications opening soon.",
                   organizer: {
                     "@type": "Organization",
                     name: "Blockchain Builders & 0G Labs",

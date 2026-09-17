@@ -183,6 +183,12 @@ export const COHORT1_TESTIMONIALS = [
     name: "David Shao",
     role: "Co-Founder, Walnut AI",
   },
+  {
+    quote:
+      "The Apollo mentors are expert in the places every startup needs, multiple deep-dive calls working through product market fit, fundraising, networking and much more. That kind of sustained, substantive help is uniquely Apollo Accelerator.",
+    name: "Wyatt Benno",
+    role: "Co-Founder, ICME",
+  },
 ];
 
 export const COHORT1_PHOTOS = [

@@ -3,13 +3,13 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import Image from "next/image";
-import { Play, Quote } from "lucide-react";
+import { Play } from "lucide-react";
 import {
   COHORT1_STATS,
-  COHORT1_TESTIMONIALS,
   COHORT1_PHOTOS,
   DEMO_DAY_RECORDING_URL,
 } from "@/lib/constants";
+import TestimonialCarousel from "./TestimonialCarousel";
 
 export default function CohortHighlights() {
   const ref = useRef(null);
@@ -124,34 +124,13 @@ export default function CohortHighlights() {
           </h3>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {COHORT1_TESTIMONIALS.map((testimonial, index) => (
-            <motion.div
-              key={testimonial.name}
-              initial={{ opacity: 0, y: 20 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: 0.5 + index * 0.1 }}
-              whileHover={{ y: -5 }}
-              className="glass glass-hover rounded-3xl p-8 flex flex-col"
-            >
-              <Quote
-                size={28}
-                className="text-brand-purple-400 mb-4 flex-shrink-0"
-              />
-              <p className="text-gray-600 leading-relaxed mb-6 flex-1">
-                &ldquo;{testimonial.quote}&rdquo;
-              </p>
-              <div>
-                <div className="font-semibold text-gray-900">
-                  {testimonial.name}
-                </div>
-                <div className="text-sm text-brand-purple-500 font-medium">
-                  {testimonial.role}
-                </div>
-              </div>
-            </motion.div>
-          ))}
-        </div>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 0.5 }}
+        >
+          <TestimonialCarousel />
+        </motion.div>
       </div>
     </section>
   );
