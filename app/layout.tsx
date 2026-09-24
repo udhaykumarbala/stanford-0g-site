@@ -15,11 +15,11 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://apollo.0g.ai"),
   title: "0G Apollo Program - AI Accelerator",
-  description: "10-week accelerator from Stanford-backed Blockchain Builders and 0G protocol for Web3 founders building the future of AI infrastructure",
+  description: "Four-month accelerator from xBuilders (led by Stanford veterans) and 0G protocol for AI founders building the future of AI infrastructure",
   keywords: ["0G", "blockchain", "accelerator", "Web3", "AI", "startup", "Stanford", "Stanford blockchain", "Stanford accelerator"],
   openGraph: {
     title: "0G Apollo Program - AI Accelerator",
-    description: "10-week accelerator from Stanford-backed Blockchain Builders and 0G protocol for Web3 founders building the future of AI infrastructure",
+    description: "Four-month accelerator from xBuilders (led by Stanford veterans) and 0G protocol for AI founders building the future of AI infrastructure",
     url: "https://apollo.0g.ai",
     siteName: "0G Apollo Program",
     type: "website",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "0G Apollo Program - AI Accelerator",
-    description: "10-week accelerator from Stanford-backed Blockchain Builders and 0G protocol for Web3 founders building the future of AI infrastructure",
+    description: "Four-month accelerator from xBuilders (led by Stanford veterans) and 0G protocol for AI founders building the future of AI infrastructure",
     images: ["/og-image.png"],
   },
   alternates: {
@@ -65,7 +65,7 @@ export default function RootLayout({
                   name: "0G Apollo Program",
                   url: "https://apollo.0g.ai",
                   logo: "https://apollo.0g.ai/apollo.png",
-                  description: "AI & Web3 Accelerator by Blockchain Builders and 0G Labs",
+                  description: "AI Accelerator by xBuilders and 0G Labs",
                 },
                 {
                   "@type": "Event",
@@ -73,10 +73,10 @@ export default function RootLayout({
                   // Cohort 2 kicks off November 2026; exact date TBC
                   startDate: "2026-11",
                   eventAttendanceMode: "https://schema.org/MixedEventAttendanceMode",
-                  description: "10-week accelerator from Stanford-backed Blockchain Builders and 0G protocol for Web3 founders building the future of AI infrastructure. Cohort 2 applications opening soon.",
+                  description: "Four-month accelerator from xBuilders (led by Stanford veterans) and 0G protocol for AI founders building the future of AI infrastructure. Cohort 2 applications opening soon.",
                   organizer: {
                     "@type": "Organization",
-                    name: "Blockchain Builders & 0G Labs",
+                    name: "xBuilders & 0G Labs",
                   },
                   location: {
                     "@type": "Place",

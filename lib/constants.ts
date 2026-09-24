@@ -15,7 +15,6 @@ export const COLORS = {
 export const NAV_LINKS = [
   { label: "Highlights", href: "#highlights" },
   { label: "About", href: "#about" },
-  { label: "Benefits", href: "#benefits" },
   { label: "Perks", href: "#perks" },
   { label: "Timeline", href: "#timeline" },
   { label: "Mentors", href: "#mentors" },
@@ -26,7 +25,7 @@ export const NAV_LINKS = [
 export const PROGRAM_STATS = [
   { value: "10", label: "Teams Selected" },
   { value: "$2M", prefix: "Up to", label: "Investment Per Project" },
-  { value: "10", label: "Week Program" },
+  { value: "4", label: "Month Program" },
   { value: "1", label: "Demo Day" },
 ];
 
@@ -53,44 +52,34 @@ export const BUILD_CATEGORIES = [
   },
 ];
 
-export const TIMELINE_DATA = [
+export const PROGRAM_PHASES = [
   {
-    week: "1–2",
-    title: "Foundation & Product Strategy",
-    topics: [
-      "Program kickoff and 0G ecosystem deep dive",
-      "OKRs workshop and goal setting",
-      "Product-market fit and hypothesis validation",
-      "Product roadmapping and UX design labs",
+    label: "Month 1",
+    period: "November",
+    duration: "4 weeks",
+    modules: [
+      { number: "01", title: "Overview & Plan" },
+      { number: "02", title: "Product Strategy" },
+      { number: "03", title: "AI Module" },
+      { number: "04", title: "Tech Deep Dives" },
     ],
   },
   {
-    week: "3–4",
-    title: "AI Module & Tech Deep Dives",
-    topics: [
-      "1:1 team sessions and progress reviews",
-      "AI development best practices with guest thought-leaders",
-      "Blockchain architecture and 0G protocol integration",
-      "Engineering management and SDLC",
-    ],
+    label: "Month 2",
+    period: "December → mid-January",
+    sprint: true,
+    description:
+      "Focused build against OKRs. Two weeks of team check-ins, no scheduled content, programming picks up again in January.",
   },
   {
-    week: "5–6",
-    title: "Fundraising & Go-to-Market",
-    topics: [
-      "Fundraising strategy and pitch deck workshops",
-      "GTM strategy across DTC, B2B, and partnerships",
-      "Token design and tokenomics",
-      "Marketing, community building, and growth",
-    ],
-  },
-  {
-    week: "7–8",
-    title: "Demo Day Prep & Final Push",
-    topics: [
-      "Demo Day office hours and pitch feedback",
-      "OKRs final push with program leads",
-      "Dress rehearsals and final polishing",
+    label: "Month 3",
+    period: "January – February",
+    duration: "4 weeks",
+    modules: [
+      { number: "05", title: "Go-to-Market" },
+      { number: "06", title: "People, Ops & Legal" },
+      { number: "07", title: "Fundraising & Demo Prep" },
+      { number: "08", title: "Demo Day & Graduation", highlight: true },
     ],
   },
 ];
@@ -105,7 +94,7 @@ export const MILESTONES = [
   {
     title: "Demo Day",
     description:
-      "Present your company to investors and the Web3 community at our virtual Demo Day. Final OKR grading, debriefing, and retrospective.",
+      "Present your company to investors and the AI community at our virtual Demo Day. Final OKR grading, debriefing, and retrospective.",
     icon: "Presentation",
   },
   {
@@ -134,7 +123,7 @@ export const BENEFITS = [
   },
   {
     title: "Demo Day Exposure",
-    description: "Showcase your project to investors and the Web3 community",
+    description: "Showcase your project to investors and the AI community",
     icon: "Presentation",
   },
 ];
@@ -143,10 +132,15 @@ export const APPLY_CRITERIA = [
   "Building on or planning to build on 0G protocol",
   "Have a working MVP or strong prototype",
   "Committed founding team (2+ members)",
-  "Available for the full 10-week program",
+  "Available for the full 4-month program",
 ];
 
 export const DEMO_DAY_RECORDING_URL = "https://youtu.be/cGtOOdPvSaQ";
+
+export const COHORT1_HIGHLIGHT_VIDEO = {
+  src: "/cohort1/apollo-cohort-1.mp4",
+  poster: "/cohort1/apollo-cohort-1-poster.jpg",
+};
 
 export const COHORT1_STATS = [
   { value: "220+", label: "Applications for 10 spots" },
@@ -167,7 +161,7 @@ export const COHORT1_TESTIMONIALS = [
   },
   {
     quote:
-      "What I appreciated about the Apollo program was the range of exceptional people around the program, from the Blockchain Builders Fund team to mentors from Google and other companies and funds we have been introduced to. The program gave us great opportunities to present at events, while the 0G team has been amazing in organizing the program and are really supportive well after Demo Day!",
+      "What I appreciated about the Apollo program was the range of exceptional people around the program, from the xBuilders team to mentors from Google and other companies and funds we have been introduced to. The program gave us great opportunities to present at events, while the 0G team has been amazing in organizing the program and are really supportive well after Demo Day!",
     name: "Alex Radu",
     role: "Co-founder, Pulsar Money",
   },
