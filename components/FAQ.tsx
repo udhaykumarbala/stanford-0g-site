@@ -15,17 +15,33 @@ const FAQ_DATA: FAQEntry[] = [
   {
     question: "Who is the 0G Apollo Program for?",
     answer:
-      "The program is designed for ambitious Web3 founders and builders creating revenue-generating decentralized AI applications and infrastructure. It targets teams working on areas like AI agents, DeFi + AI solutions, on-chain data markets, cross-chain infrastructure, gaming/NFTs with AI, decentralized content applications, or any innovative projects that can launch and scale on the 0G protocol. It\u2019s ideal for early-stage to growth-stage teams ready to build, integrate with 0G\u2019s ultra-fast decentralized AI chain, and achieve product-market fit (PMF) and go-to-market (GTM) traction. Only 10 teams will be selected globally for this intensive cohort.",
+      "The program is designed for ambitious AI founders and builders creating revenue-generating products. It is ideal for early-stage to growth stage teams ready to build and integrate with 0G\u2019s infrastructure, and achieve product market fit and go to market traction. Only 10 teams will be selected globally for this intensive cohort.",
   },
   {
-    question: "Who is Blockchain Builders Fund?",
+    question: "Who is xBuilders?",
     answer:
-      "Blockchain Builders Fund (BBF) is the organization behind Stanford University\u2019s blockchain ecosystem. BBF consists of Stanford blockchain veterans and pioneers who have built Stanford\u2019s blockchain education, acceleration, and community programs. They partner with 0G to deliver expert mentorship, structured programming, and Silicon Valley-style startup support in the Apollo Accelerator.",
+      (
+      <>
+        xBuilders is comprised of veteran founders, operators, and investors
+        who have extensive experience running accelerators across Blockchain,
+        Fintech, and AI. The xBuilders team founded and has operated the
+        Stanford Blockchain Accelerator for the last <strong>5</strong> years,
+        helping <strong>85+</strong> projects collectively raise over{" "}
+        <strong>$1B</strong> from leading funds with multiple unicorn
+        successes. The team has also run AI accelerators for Cornell/IC3, and
+        has extensive experience building and operating the Google for
+        Startups accelerator program for dozens of cohorts across AI,
+        innovation, and software technologies. Accelerator programming is
+        based on Stanford University’s startup methodologies and courses, and
+        the extensive experience of the team as founders, operators, and
+        across the SBA, Google for Startups, StartX, and Cardinal Ventures.
+      </>
+    ),
   },
   {
     question: "What are the requirements to apply?",
     answer:
-      "Teams actively building decentralized AI projects with potential for revenue generation, and teams available for the 10-week program.",
+      "Teams actively building AI projects with a potential for revenue generation, and teams available for the 4-month program.",
   },
   {
     question: "Do we have to be exclusive to the 0G network?",
@@ -35,7 +51,7 @@ const FAQ_DATA: FAQEntry[] = [
   {
     question: "Is the program remote?",
     answer:
-      "The 10-week program is primarily remote, except for an in-person Demo Day towards the end of the program.",
+      "The 4-month program is primarily remote, except for an in-person Demo Day towards the end of the program.",
   },
   {
     question: "When does Cohort 2 start?",

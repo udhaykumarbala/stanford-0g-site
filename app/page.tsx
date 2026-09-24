@@ -3,7 +3,6 @@ import Hero from "@/components/Hero";
 import ProgramStats from "@/components/ProgramStats";
 import CohortHighlights from "@/components/CohortHighlights";
 import ProgramOverview from "@/components/ProgramOverview";
-import Benefits from "@/components/Benefits";
 import Perks from "@/components/Perks";
 import Timeline from "@/components/Timeline";
 import Mentors from "@/components/Mentors";
@@ -20,10 +19,9 @@ export default function Home() {
         <Navbar />
         <Hero />
         <ProgramStats />
-        <CohortHighlights />
         <ProgramOverview />
+        <CohortHighlights />
         <Projects />
-        <Benefits />
         <Perks />
         <Mentors />
         <FAQ />

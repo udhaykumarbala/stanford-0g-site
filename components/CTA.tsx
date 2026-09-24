@@ -70,10 +70,10 @@ export default function CTA() {
           <p className="text-gray-500 mt-8">
             Questions?{" "}
             <a
-              href="mailto:0gm@0g.ai"
+              href="mailto:apollo@0g.ai"
               className="text-brand-purple-500 hover:text-brand-purple-400 transition-colors font-medium"
             >
-              0gm@0g.ai
+              apollo@0g.ai
             </a>
           </p>
         </motion.div>
