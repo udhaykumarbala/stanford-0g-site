@@ -82,9 +82,11 @@ export default function Hero() {
               muted
               loop
               playsInline
+              preload="metadata"
+              poster="/apollo-cohort-2-intro-poster.jpg"
               className="w-[calc(100%+6px)] h-auto block -ml-[3px]"
             >
-              <source src="/0G_Apollo_Video.mp4" type="video/mp4" />
+              <source src="/apollo-cohort-2-intro.mp4" type="video/mp4" />
             </video>
           </div>
 
