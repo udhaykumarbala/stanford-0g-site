@@ -3,7 +3,7 @@
 import { motion, useInView } from "framer-motion";
 import { Fragment, useRef } from "react";
 import Image from "next/image";
-import { Lock, Check } from "lucide-react";
+import { Lock, Check, ArrowUpRight, Mail } from "lucide-react";
 
 interface Perk {
   partner: string;
@@ -62,6 +62,96 @@ const PERKS: Perk[] = [
   },
 ];
 
+interface AlumniPerk {
+  company: string;
+  logo: string;
+  website: string;
+  websiteLabel: string;
+  oneLiner: string;
+  value: string;
+  detail: string;
+  logoWide?: boolean;
+}
+
+const ALUMNI_PERKS: AlumniPerk[] = [
+  {
+    company: "Om Labs",
+    logo: "/projects/om-labs.jpeg",
+    website: "https://omlabs.xyz",
+    websiteLabel: "omlabs.xyz",
+    oneLiner: "AI QA engineer that reviews, tests, monitors, and fixes software",
+    value: "10,000 credits",
+    detail: "on the platform, plus 50% off all plans",
+  },
+  {
+    company: "Pulsar Money",
+    logo: "/projects/pulsar.png",
+    website: "https://pulsar.money",
+    websiteLabel: "pulsar.money",
+    oneLiner: "Europe\u2019s first crypto-native neobank",
+    value: "50% off",
+    detail: "subscription plans, plus cashback rewards",
+  },
+  {
+    company: "UV Labs",
+    logo: "/projects/uv-labs.png",
+    website: "https://uvlabs.ai",
+    websiteLabel: "uvlabs.ai",
+    oneLiner: "Data + infra to train safer financial LLMs",
+    value: "$8,000",
+    detail: "to launch a token on Mosh.trade, with help raising from liquid funds",
+  },
+  {
+    company: "Walnut AI",
+    logo: "/projects/walnut.png",
+    logoWide: true,
+    website: "https://walnut.ai",
+    websiteLabel: "walnut.ai",
+    oneLiner: "The first agentic professional network",
+    value: "3 months free",
+    detail: "premium membership for every Cohort 2 founder",
+  },
+  {
+    company: "DSALTA",
+    logo: "/projects/dsalta.png",
+    logoWide: true,
+    website: "https://www.dsalta.com",
+    websiteLabel: "dsalta.com",
+    oneLiner: "AI compliance agents for 50+ frameworks",
+    value: "30% off",
+    detail: "your first framework, plus a free compliance planning session",
+  },
+];
+
+function GroupHeading({
+  title,
+  subtitle,
+  isInView,
+  delay = 0,
+}: {
+  title: string;
+  subtitle?: string;
+  isInView: boolean;
+  delay?: number;
+}) {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={isInView ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.6, delay }}
+      className="mb-6"
+    >
+      <div className="flex items-center gap-4">
+        <h3 className="text-xl md:text-2xl font-bold text-gray-900 whitespace-nowrap">
+          {title}
+        </h3>
+        <span className="flex-1 h-px bg-gradient-to-r from-brand-purple-300/70 via-brand-purple-200/40 to-transparent" />
+      </div>
+      {subtitle && <p className="text-gray-600 mt-2">{subtitle}</p>}
+    </motion.div>
+  );
+}
+
 export default function Perks() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
@@ -89,12 +179,11 @@ export default function Perks() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
-            Exclusive Partner <span className="text-gradient">Perks</span>
+            Exclusive Perks for <span className="text-gradient">Apollo Teams</span>
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            Reserved for the 10 selected Apollo teams. Infrastructure credits,
-            security audits, and a pre-launch security analysis from our partner
-            network.
+            Reserved for the 10 selected Apollo teams. From our partners, and
+            from the founders who came before you.
           </p>
           <div className="mt-6 flex justify-center">
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full gradient-border text-sm font-medium text-brand-purple-500">
@@ -105,7 +194,8 @@ export default function Perks() {
           </div>
         </motion.div>
 
-        {/* Ledger */}
+        {/* Partner perks */}
+        <GroupHeading title="From our partners" isInView={isInView} delay={0.1} />
         <div className="flex flex-col gap-6">
           {PERKS.map((perk, index) => {
             return (
@@ -204,6 +294,120 @@ export default function Perks() {
               </motion.div>
             );
           })}
+
+          {/* More partner perks at kickoff */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="rounded-2xl px-6 py-4 border-2 border-dashed border-brand-purple-300/70 bg-brand-purple-100/20 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-center sm:text-left"
+          >
+            <span className="font-semibold text-brand-purple-500 whitespace-nowrap">
+              More unlock at kickoff
+            </span>
+            <span className="text-gray-600 text-sm">
+              Cloud credits, AI API credits, legal, banking and wallet
+              infrastructure.
+            </span>
+          </motion.div>
+        </div>
+
+        {/* Alumni perks */}
+        <div className="mt-20">
+          <GroupHeading
+            title="From Cohort 1 alumni"
+            subtitle="The Apollo flywheel: our graduates now offer perks to the next cohort."
+            isInView={isInView}
+            delay={0.3}
+          />
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {ALUMNI_PERKS.map((perk, index) => (
+              <motion.div
+                key={perk.company}
+                initial={{ opacity: 0, y: 30 }}
+                animate={isInView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.6, delay: 0.4 + index * 0.08 }}
+                whileHover={{ y: -6 }}
+                className="group glass glass-hover rounded-2xl p-6 flex flex-col relative overflow-hidden"
+              >
+                <span className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_85%_15%,rgba(146,0,225,0.08),transparent_55%)]" />
+
+                {/* Identity row */}
+                <div className="relative flex items-start gap-3">
+                  <div
+                    className={`h-11 rounded-xl bg-white flex items-center justify-center overflow-hidden ring-1 ring-brand-purple-500/10 group-hover:ring-brand-purple-500/30 shadow-sm transition-all flex-shrink-0 ${
+                      perk.logoWide ? "w-24 px-2" : "w-11 p-1"
+                    }`}
+                  >
+                    <Image
+                      src={perk.logo}
+                      alt={`${perk.company} logo`}
+                      width={perk.logoWide ? 96 : 44}
+                      height={44}
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                  <div className="min-w-0 flex-1">
+                    <div className="flex items-center justify-between gap-2">
+                      <span className="font-semibold text-gray-900 truncate">
+                        {perk.company}
+                      </span>
+                      <span className="text-[11px] font-medium text-brand-purple-500 bg-brand-purple-500/10 px-2.5 py-0.5 rounded-full flex-shrink-0">
+                        Cohort 1
+                      </span>
+                    </div>
+                    <p
+                      title={perk.oneLiner}
+                      className="text-sm text-gray-500 leading-snug mt-0.5 line-clamp-2"
+                    >
+                      {perk.oneLiner}
+                    </p>
+                  </div>
+                </div>
+
+                {/* Perk */}
+                <div className="relative mt-5 flex-1">
+                  <div className="text-2xl md:text-3xl font-bold text-gradient leading-tight">
+                    {perk.value}
+                  </div>
+                  <p className="text-gray-700 mt-1.5 leading-relaxed">{perk.detail}</p>
+                </div>
+
+                {/* Link */}
+                <a
+                  href={perk.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="relative mt-5 inline-flex items-center gap-1 text-sm font-medium text-gray-500 hover:text-brand-purple-500 transition-colors self-start"
+                >
+                  {perk.websiteLabel}
+                  <ArrowUpRight size={14} />
+                </a>
+              </motion.div>
+            ))}
+
+            {/* Add yours */}
+            <motion.a
+              href="mailto:apollo@0g.ai?subject=Cohort%201%20alumni%20perk"
+              initial={{ opacity: 0, y: 30 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.6, delay: 0.4 + ALUMNI_PERKS.length * 0.08 }}
+              whileHover={{ y: -6 }}
+              className="rounded-2xl p-6 border-2 border-dashed border-brand-purple-300/70 bg-brand-purple-100/20 hover:bg-brand-purple-100/40 transition-colors flex flex-col items-center justify-center text-center gap-3 min-h-[220px]"
+            >
+              <span className="w-11 h-11 rounded-xl bg-white/80 flex items-center justify-center ring-1 ring-brand-purple-500/15">
+                <Mail size={20} className="text-brand-purple-500" />
+              </span>
+              <span className="text-lg font-semibold text-brand-purple-500">
+                More alumni perks coming
+              </span>
+              <span className="text-sm text-gray-600 leading-relaxed">
+                Cohort 1 founder? Add yours at
+                <br />
+                <span className="font-medium text-gray-800">apollo@0g.ai</span>
+              </span>
+            </motion.a>
+          </div>
         </div>
       </div>
     </section>
