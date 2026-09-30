@@ -300,10 +300,10 @@ export default function Perks() {
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="rounded-2xl px-6 py-4 border-2 border-dashed border-brand-purple-300/70 bg-brand-purple-100/20 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-center sm:text-left"
+            className="rounded-2xl px-6 py-4 border border-dashed border-brand-purple-300 bg-brand-purple-100/20 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-center sm:text-left"
           >
             <span className="font-semibold text-brand-purple-500 whitespace-nowrap">
-              More unlock at kickoff
+              More unlocks at kickoff
             </span>
             <span className="text-gray-600 text-sm">
               Cloud credits, AI API credits, legal, banking and wallet
@@ -358,7 +358,7 @@ export default function Perks() {
                     </div>
                     <p
                       title={perk.oneLiner}
-                      className="text-sm text-gray-500 leading-snug mt-0.5 line-clamp-2"
+                      className="text-sm text-gray-500 leading-snug mt-0.5 line-clamp-2 min-h-[2.5rem]"
                     >
                       {perk.oneLiner}
                     </p>
@@ -378,10 +378,10 @@ export default function Perks() {
                   href={perk.website}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="relative mt-5 inline-flex items-center gap-1 text-sm font-medium text-gray-500 hover:text-brand-purple-500 transition-colors self-start"
+                  className="relative mt-5 inline-flex items-center gap-1 font-mono text-xs text-brand-purple-500 hover:text-brand-purple-400 transition-colors self-start"
                 >
                   {perk.websiteLabel}
-                  <ArrowUpRight size={14} />
+                  <ArrowUpRight size={14} className="group-hover:rotate-45 transition-transform" />
                 </a>
               </motion.div>
             ))}
@@ -393,7 +393,7 @@ export default function Perks() {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.4 + ALUMNI_PERKS.length * 0.08 }}
               whileHover={{ y: -6 }}
-              className="rounded-2xl p-6 border-2 border-dashed border-brand-purple-300/70 bg-brand-purple-100/20 hover:bg-brand-purple-100/40 transition-colors flex flex-col items-center justify-center text-center gap-3 min-h-[220px]"
+              className="rounded-2xl p-6 border border-dashed border-brand-purple-300 bg-brand-purple-100/20 hover:bg-brand-purple-100/40 transition-colors flex flex-col items-center justify-center text-center gap-3 min-h-[220px]"
             >
               <span className="w-11 h-11 rounded-xl bg-white/80 flex items-center justify-center ring-1 ring-brand-purple-500/15">
                 <Mail size={20} className="text-brand-purple-500" />
