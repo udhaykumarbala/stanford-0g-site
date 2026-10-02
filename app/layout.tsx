@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/og-image.png",
+        url: "/og-image.png?v=2",
         width: 1200,
         height: 630,
         alt: "0G Apollo Program - AI Accelerator",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "0G Apollo Program - AI Accelerator",
     description: "Four-month accelerator from xBuilders (led by Stanford veterans) and 0G protocol for AI founders building the future of AI infrastructure",
-    images: ["/og-image.png"],
+    images: ["/og-image.png?v=2"],
   },
   alternates: {
     canonical: "https://apollo.0g.ai",
