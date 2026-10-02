@@ -103,7 +103,7 @@ function PhaseCard({ phase, index }: { phase: Phase; index: number }) {
       transition={{ duration: 0.6, delay: index * 0.15 }}
       className={`rounded-2xl p-7 flex flex-col ${
         isSprint
-          ? "border-2 border-dashed border-brand-purple-300/70 bg-brand-purple-100/20"
+          ? "border border-dashed border-brand-purple-300 bg-brand-purple-100/20"
           : "glass border-t-4 border-t-brand-purple-500"
       }`}
     >
