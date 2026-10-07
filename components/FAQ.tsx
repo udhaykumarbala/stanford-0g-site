@@ -3,8 +3,8 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
+import Link from "next/link";
 import { Plus, Minus } from "lucide-react";
-import { useWaitlist } from "./WaitlistDialog";
 
 type FAQEntry = {
   question: string;
@@ -59,7 +59,7 @@ const FAQ_DATA: FAQEntry[] = [
       "Cohort 2 kicks off in November 2026 — the exact date is to be confirmed.",
   },
   {
-    question: "When do applications open?",
+    question: "Are applications open?",
     answer: <ApplicationsOpenAnswer />,
   },
   {
@@ -82,18 +82,16 @@ const FAQ_DATA: FAQEntry[] = [
 ];
 
 function ApplicationsOpenAnswer() {
-  const { open } = useWaitlist();
   return (
     <>
-      Soon!{" "}
-      <button
-        type="button"
-        onClick={open}
+      Applications are open now.{" "}
+      <Link
+        href="/apply"
         className="text-brand-purple-500 hover:text-brand-purple-400 font-medium underline underline-offset-4 transition-colors"
       >
-        Join the waitlist
-      </button>{" "}
-      to be notified the moment Cohort 2 applications open.
+        Apply to Cohort 2
+      </Link>{" "}
+      to be considered for the November intake.
     </>
   );
 }

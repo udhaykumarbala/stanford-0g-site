@@ -2,13 +2,12 @@
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowDown } from "lucide-react";
+import Link from "next/link";
 import DotGrid from "./DotGrid";
-import { useWaitlist } from "./WaitlistDialog";
 
 export default function Hero() {
   const { scrollY } = useScroll();
   const scrollIndicatorOpacity = useTransform(scrollY, [0, 100], [1, 0]);
-  const { open: openWaitlist } = useWaitlist();
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24">
       {/* Animated Background Orbs */}
@@ -92,21 +91,20 @@ export default function Hero() {
 
           {/* CTAs */}
           <div className="flex flex-col items-center gap-4">
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              type="button"
-              onClick={openWaitlist}
-              className="bg-gradient-to-r from-brand-purple-500 to-brand-purple-400 text-white px-8 py-4 rounded-full font-medium text-lg hover:shadow-xl hover:shadow-brand-purple-500/30 transition-all cursor-pointer inline-block"
-            >
-              Apply Now
-            </motion.button>
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              <Link
+                href="/apply"
+                className="bg-gradient-to-r from-brand-purple-500 to-brand-purple-400 text-white px-8 py-4 rounded-full font-medium text-lg hover:shadow-xl hover:shadow-brand-purple-500/30 transition-all inline-block"
+              >
+                Apply Now
+              </Link>
+            </motion.div>
             <div className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full">
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-purple-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-brand-purple-500"></span>
               </span>
-              <span className="text-sm text-gray-600 font-medium">Cohort 2 applications opening soon</span>
+              <span className="text-sm text-gray-600 font-medium">Cohort 2 applications are open</span>
             </div>
           </div>
         </motion.div>

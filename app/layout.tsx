@@ -73,7 +73,7 @@ export default function RootLayout({
                   // Cohort 2 kicks off November 2026; exact date TBC
                   startDate: "2026-11",
                   eventAttendanceMode: "https://schema.org/MixedEventAttendanceMode",
-                  description: "Four-month accelerator from xBuilders (led by Stanford veterans) and 0G protocol for AI founders building the future of AI infrastructure. Cohort 2 applications opening soon.",
+                  description: "Four-month accelerator from xBuilders (led by Stanford veterans) and 0G protocol for AI founders building the future of AI infrastructure. Cohort 2 applications are open.",
                   organizer: {
                     "@type": "Organization",
                     name: "xBuilders & 0G Labs",
