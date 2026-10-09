@@ -10,25 +10,22 @@ import Projects from "@/components/Projects";
 import FAQ from "@/components/FAQ";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
-import { WaitlistProvider } from "@/components/WaitlistDialog";
 
 export default function Home() {
   return (
-    <WaitlistProvider>
-      <main className="min-h-screen">
-        <Navbar />
-        <Hero />
-        <ProgramStats />
-        <ProgramOverview />
-        <CohortHighlights />
-        <Projects />
-        <Perks />
-        <Mentors />
-        <FAQ />
-        <Timeline />
-        <CTA />
-        <Footer />
-      </main>
-    </WaitlistProvider>
+    <main className="min-h-screen">
+      <Navbar />
+      <Hero />
+      <ProgramStats />
+      <ProgramOverview />
+      <CohortHighlights />
+      <Projects />
+      <Perks />
+      <Mentors />
+      <FAQ />
+      <Timeline />
+      <CTA />
+      <Footer />
+    </main>
   );
 }

@@ -3,8 +3,8 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
+import Link from "next/link";
 import { Plus, Minus } from "lucide-react";
-import { useWaitlist } from "./WaitlistDialog";
 
 type FAQEntry = {
   question: string;
@@ -54,12 +54,17 @@ const FAQ_DATA: FAQEntry[] = [
       "The 4-month program is primarily remote, except for an in-person Demo Day towards the end of the program.",
   },
   {
+    question: "What is the application deadline?",
+    answer:
+      "Applications close on November 2, 2026. Applicants are reviewed and accepted on a rolling basis, so apply as early as you can.",
+  },
+  {
     question: "When does Cohort 2 start?",
     answer:
       "Cohort 2 kicks off in November 2026 — the exact date is to be confirmed.",
   },
   {
-    question: "When do applications open?",
+    question: "Are applications open?",
     answer: <ApplicationsOpenAnswer />,
   },
   {
@@ -82,18 +87,17 @@ const FAQ_DATA: FAQEntry[] = [
 ];
 
 function ApplicationsOpenAnswer() {
-  const { open } = useWaitlist();
   return (
     <>
-      Soon!{" "}
-      <button
-        type="button"
-        onClick={open}
+      Applications are open now.{" "}
+      <Link
+        href="/apply"
         className="text-brand-purple-500 hover:text-brand-purple-400 font-medium underline underline-offset-4 transition-colors"
       >
-        Join the waitlist
-      </button>{" "}
-      to be notified the moment Cohort 2 applications open.
+        Apply to Cohort 2
+      </Link>{" "}
+      before November 2, 2026. Teams are reviewed and accepted on a rolling
+      basis, so early applications have the best chance.
     </>
   );
 }
