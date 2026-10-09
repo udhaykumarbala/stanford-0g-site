@@ -54,6 +54,11 @@ const FAQ_DATA: FAQEntry[] = [
       "The 4-month program is primarily remote, except for an in-person Demo Day towards the end of the program.",
   },
   {
+    question: "What is the application deadline?",
+    answer:
+      "Applications close on November 2, 2026. Applicants are reviewed and accepted on a rolling basis, so apply as early as you can.",
+  },
+  {
     question: "When does Cohort 2 start?",
     answer:
       "Cohort 2 kicks off in November 2026 — the exact date is to be confirmed.",
@@ -91,7 +96,8 @@ function ApplicationsOpenAnswer() {
       >
         Apply to Cohort 2
       </Link>{" "}
-      to be considered for the November intake.
+      before November 2, 2026. Teams are reviewed and accepted on a rolling
+      basis, so early applications have the best chance.
     </>
   );
 }

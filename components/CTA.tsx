@@ -49,8 +49,8 @@ export default function CTA() {
             Ready to <span className="text-gradient">Accelerate</span>?
           </h2>
           <p className="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
-            Cohort 2 applications are open. Four months, up to 10 teams,
-            Demo Day on Stanford campus.
+            Cohort 2 applications close November 2. Teams are accepted on a
+            rolling basis, so the earlier you apply, the better.
           </p>
 
           {/* CTA Button */}

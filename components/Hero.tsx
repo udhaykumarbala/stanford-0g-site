@@ -104,7 +104,7 @@ export default function Hero() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-purple-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-brand-purple-500"></span>
               </span>
-              <span className="text-sm text-gray-600 font-medium">Cohort 2 applications are open</span>
+              <span className="text-sm text-gray-600 font-medium">Applications close Nov 2 · rolling admissions</span>
             </div>
           </div>
         </motion.div>

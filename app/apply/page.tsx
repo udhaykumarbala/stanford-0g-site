@@ -40,7 +40,8 @@ export default function ApplyPage() {
           Apply to Apollo <span className="text-gradient">Cohort II</span>
         </h1>
         <p className="text-gray-600 mb-8">
-          Four months, up to 10 teams, Demo Day on Stanford campus. Questions?{" "}
+          Applications close November 2, 2026. Teams are accepted on a rolling
+          basis. Questions?{" "}
           <a
             href="mailto:apollo@0g.ai"
             className="text-brand-purple-500 hover:text-brand-purple-400 font-medium transition-colors"
