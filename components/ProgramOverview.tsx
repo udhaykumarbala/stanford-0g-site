@@ -41,8 +41,8 @@ export default function ProgramOverview() {
             <p className="text-gray-600 text-lg mb-8 leading-relaxed">
               Cohort 2 will be a four-month accelerator for up to 10 startups
               building on the 0G protocol, running November through February
-              with a December build sprint, and closing with Demo Day on
-              Stanford campus.
+              with a December build sprint, and closing with an in-person
+              graduation on Stanford campus.
             </p>
 
             {/* Partner Logos */}

@@ -94,7 +94,7 @@ export const MILESTONES = [
   {
     title: "Demo Day",
     description:
-      "Present your company to investors and the AI community at our virtual Demo Day. Final OKR grading, debriefing, and retrospective.",
+      "Present your company to investors and the AI community at Demo Day. Final OKR grading, debriefing, and retrospective.",
     icon: "Presentation",
   },
   {

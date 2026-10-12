@@ -182,8 +182,8 @@ export default function Perks() {
             Exclusive Perks for <span className="text-gradient">Apollo Teams</span>
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            Reserved for the 10 selected Apollo teams. From our partners, and
-            from the founders who came before you.
+            What our partners gave Cohort 1, and what Cohort 1 founders now
+            offer the next cohort.
           </p>
           <div className="mt-6 flex justify-center">
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full gradient-border text-sm font-medium text-brand-purple-500">
@@ -195,7 +195,12 @@ export default function Perks() {
         </motion.div>
 
         {/* Partner perks */}
-        <GroupHeading title="From our partners" isInView={isInView} delay={0.1} />
+        <GroupHeading
+          title="Cohort 1 perks"
+          subtitle="Offered to Cohort 1 teams by our partners. Cohort 2 partner perks are confirmed at kickoff."
+          isInView={isInView}
+          delay={0.1}
+        />
         <div className="flex flex-col gap-6">
           {PERKS.map((perk, index) => {
             return (

@@ -51,7 +51,7 @@ const FAQ_DATA: FAQEntry[] = [
   {
     question: "Is the program remote?",
     answer:
-      "The 4-month program is primarily remote, except for an in-person Demo Day towards the end of the program.",
+      "The 4-month program is primarily remote, except for an in-person graduation at Stanford towards the end of the program.",
   },
   {
     question: "What is the application deadline?",
