@@ -73,28 +73,6 @@ export default function ProgramOverview() {
                   />
                 </a>
               </div>
-              <p className="text-sm text-gray-500 font-medium mt-2">Partners</p>
-              <div className="flex items-center gap-4">
-                <div className="glass px-4 py-2 rounded-xl flex items-center justify-center">
-                  <Image
-                    src="/gc.png"
-                    alt="Google"
-                    width={70}
-                    height={28}
-                    className="h-5 w-auto"
-                  />
-                </div>
-                <span className="text-gray-400 text-lg">×</span>
-                <div className="glass px-4 py-2 rounded-xl flex items-center justify-center">
-                  <Image
-                    src="/privy.png"
-                    alt="Privy"
-                    width={70}
-                    height={28}
-                    className="h-5 w-auto"
-                  />
-                </div>
-              </div>
             </div>
           </motion.div>
 
