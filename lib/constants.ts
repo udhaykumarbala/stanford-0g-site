@@ -113,7 +113,7 @@ export const BENEFITS = [
   },
   {
     title: "Technical Support",
-    description: "Direct access to 0G protocol engineers and resources",
+    description: "Direct access to 0G engineers and resources",
     icon: "Code",
   },
   {
@@ -129,7 +129,7 @@ export const BENEFITS = [
 ];
 
 export const APPLY_CRITERIA = [
-  "Building on or planning to build on 0G protocol",
+  "Building on or planning to build on 0G AI infrastructure",
   "Have a working MVP or strong prototype",
   "Committed founding team (2+ members)",
   "Available for the full 4-month program",
@@ -148,7 +148,7 @@ export const COHORT1_STATS = [
     value: "100+",
     label: "Intro requests from investors, enterprises, and partners since Demo Day",
   },
-  { value: "US$1.5M", label: "Raised by alumni within 30 days of graduation" },
+  { value: "US$20M", prefix: "Up to", label: "Investment opportunity across teams" },
   { value: "10/10", label: "Teams at Demo Day" },
 ];
 

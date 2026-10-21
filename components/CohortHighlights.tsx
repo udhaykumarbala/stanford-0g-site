@@ -47,6 +47,9 @@ export default function CohortHighlights() {
               whileHover={{ y: -5 }}
               className="glass glass-hover rounded-3xl p-6 md:p-8 text-center"
             >
+              {"prefix" in stat && stat.prefix && (
+                <div className="text-sm text-gray-500 font-medium">{stat.prefix}</div>
+              )}
               <div className="text-3xl md:text-5xl font-bold text-gradient mb-3">
                 {stat.value}
               </div>
@@ -64,8 +67,7 @@ export default function CohortHighlights() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="text-center text-lg md:text-2xl text-gray-700 max-w-4xl mx-auto mb-14"
         >
-          Apollo alumni are live on 0G Storage, Compute, and Chain — and
-          actively building on mainnet.
+          Apollo alumni are actively building on 0G AI infrastructure.
         </motion.p>
 
         {/* Cohort 1 highlight video */}

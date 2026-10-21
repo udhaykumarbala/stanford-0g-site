@@ -16,11 +16,11 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://apollo.0g.ai"),
   title: "0G Apollo Program - AI Accelerator",
-  description: "Four-month accelerator from xBuilders (led by Stanford veterans) and 0G protocol for AI founders building the future of AI infrastructure",
+  description: "Four-month accelerator from xBuilders (led by Stanford veterans) and 0G for AI founders building the future of AI infrastructure",
   keywords: ["0G", "blockchain", "accelerator", "Web3", "AI", "startup", "Stanford", "Stanford blockchain", "Stanford accelerator"],
   openGraph: {
     title: "0G Apollo Program - AI Accelerator",
-    description: "Four-month accelerator from xBuilders (led by Stanford veterans) and 0G protocol for AI founders building the future of AI infrastructure",
+    description: "Four-month accelerator from xBuilders (led by Stanford veterans) and 0G for AI founders building the future of AI infrastructure",
     url: "https://apollo.0g.ai",
     siteName: "0G Apollo Program",
     type: "website",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "0G Apollo Program - AI Accelerator",
-    description: "Four-month accelerator from xBuilders (led by Stanford veterans) and 0G protocol for AI founders building the future of AI infrastructure",
+    description: "Four-month accelerator from xBuilders (led by Stanford veterans) and 0G for AI founders building the future of AI infrastructure",
     images: ["/og-image.png?v=3"],
   },
   alternates: {
@@ -74,7 +74,7 @@ export default function RootLayout({
                   // Cohort 2 kicks off November 2026; exact date TBC
                   startDate: "2026-11",
                   eventAttendanceMode: "https://schema.org/MixedEventAttendanceMode",
-                  description: "Four-month accelerator from xBuilders (led by Stanford veterans) and 0G protocol for AI founders building the future of AI infrastructure. Cohort 2 applications are open until November 2, 2026, with teams accepted on a rolling basis.",
+                  description: "Four-month accelerator from xBuilders (led by Stanford veterans) and 0G for AI founders building the future of AI infrastructure. Cohort 2 applications are open until November 2, 2026, with teams accepted on a rolling basis.",
                   organizer: {
                     "@type": "Organization",
                     name: "xBuilders & 0G Labs",
