@@ -69,9 +69,11 @@ export default function Hero() {
 
           {/* Description */}
           <p className="text-base md:text-lg text-gray-500 mb-10 max-w-3xl mx-auto leading-relaxed italic">
-            0G Apollo is an exclusive builder program supported by xBuilders
-            (led by Stanford veterans) for developers and protocols building on the
-            world&apos;s first decentralized AI data network.
+            0G Apollo is an exclusive builder program led by Stanford veterans,
+            for founders building on the leading trust layer for AI. If owning
+            your tech and cost structure matters, you utilize open source
+            models, and are building for enterprise grade privacy and
+            compliance, join the Apollo program and build on 0G.
           </p>
 
           {/* Video */}

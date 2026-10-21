@@ -23,30 +23,34 @@ const FAQ_DATA: FAQEntry[] = [
       (
       <>
         xBuilders is comprised of veteran founders, operators, and investors
-        who have extensive experience running accelerators across Blockchain,
-        Fintech, and AI. The xBuilders team founded and has operated the
-        Stanford Blockchain Accelerator for the last <strong>5</strong> years,
-        helping <strong>85+</strong> projects collectively raise over{" "}
+        from Google, Salesforce, Capital One, and Coinbase, who have extensive
+        experience running accelerators across AI, Fintech, and Blockchain.
+        The team teaches the MS&amp;E447 AI Sovereignty &amp; Entrepreneurship
+        course at Stanford University’s School of Engineering, runs the
+        Stanford Openlab Open Source AI Seminar, and has run the Stanford
+        Blockchain Accelerator for the last <strong>5</strong> years, helping{" "}
+        <strong>85+</strong> projects collectively raise over{" "}
         <strong>$1B</strong> from leading funds with multiple unicorn
-        successes. The team has also run AI accelerators for Cornell/IC3, and
-        has extensive experience building and operating the Google for
-        Startups accelerator program for dozens of cohorts across AI,
-        innovation, and software technologies. Accelerator programming is
+        successes. The xBuilders team has also run AI accelerators for
+        Cornell/IC3, and has extensive experience building and operating the
+        Google for Startups accelerator program for dozens of cohorts across
+        AI, innovation, and software technologies. Accelerator programming is
         based on Stanford University’s startup methodologies and courses, and
         the extensive experience of the team as founders, operators, and
-        across the SBA, Google for Startups, StartX, and Cardinal Ventures.
+        investors running accelerators for SBA, Google for Startups, StartX,
+        and Cardinal Ventures.
       </>
     ),
   },
   {
     question: "What are the requirements to apply?",
     answer:
-      "Teams actively building AI projects with a potential for revenue generation, and teams available for the 4-month program.",
+      "Teams actively building AI projects with a clear path to revenue and a validated need and market, and available for the 4-month program.",
   },
   {
     question: "Do we have to be exclusive to the 0G network?",
     answer:
-      "No strict exclusivity is required upfront, but the program is built around helping teams launch and scale on the 0G protocol. Accepted teams receive deep integration support, technical mentorship from 0G engineers, and incentives tied to building/deploying on 0G (e.g., funding calibrated to roadmap and traction on the network). It\u2019s not a lock-in, but the value\u2014funding, credits, tools, and mentorship\u2014is heavily geared toward projects that commit to and succeed on 0G. Multi-chain or hybrid approaches may be considered if they meaningfully leverage 0G\u2019s strengths (speed, decentralization for AI).",
+      "No strict exclusivity is required upfront, but the program is built around helping teams launch and scale on 0G infrastructure. Accepted teams receive deep integration support, technical mentorship from 0G engineers, and incentives tied to building/deploying on 0G (e.g., funding calibrated to roadmap and traction on the network). It\u2019s not a lock-in, but the value including funding, credits, tools, and mentorship is heavily geared toward projects that commit to and succeed on 0G. Hybrid approaches may be considered if they meaningfully leverage 0G\u2019s strengths (compute and storage).",
   },
   {
     question: "Is the program remote?",
