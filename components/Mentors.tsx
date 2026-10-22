@@ -57,7 +57,7 @@ const mentors: Mentor[] = [
   },
   {
     name: "Steven Willinger",
-    position: "GP · Blockchain Builders · Coinbase Ventures Lead · Ex-Google & Blockstream · Stanford GSB",
+    position: "GP · xBuilders · Coinbase Ventures Lead · Ex-Google & Blockstream · Stanford GSB",
     image: "/steven.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/stevenwillinger/",
@@ -65,7 +65,7 @@ const mentors: Mentor[] = [
   },
   {
     name: "Kun Peng",
-    position: "GP · Blockchain Builders · Founder Stanford Blockchain Accelerator & BASS · Advisor to 40+ Startups",
+    position: "GP · xBuilders · Founder Stanford Blockchain Accelerator & BASS · Advisor to 40+ Startups",
     image: "/kun.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/elkun/",
@@ -73,7 +73,7 @@ const mentors: Mentor[] = [
   },
   {
     name: "Gil Rosen",
-    position: "GP · Blockchain Builders · Exited Founder (Eccella) · 50+ Angel Deals · Stanford GSB",
+    position: "GP · xBuilders · Exited Founder (Eccella) · 50+ Angel Deals · Stanford GSB",
     image: "/gil.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/rosengil/",
@@ -149,6 +149,14 @@ const mentors: Mentor[] = [
     image: "/peter-norvig.jpeg",
     socials: {
       linkedin: "https://www.linkedin.com/in/pnorvig/",
+    },
+  },
+  {
+    name: "Paige Bailey",
+    position: "Developer Experience Lead at Google DeepMind · Ex-GitHub",
+    image: "/paige-bailey.jpg",
+    socials: {
+      linkedin: "https://www.linkedin.com/in/dynamicwebpaige/",
     },
   },
   {
@@ -254,7 +262,7 @@ export default function Mentors() {
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
             Learn from industry leaders and Stanford veterans who will guide you
-            through your Web3 journey
+            through your journey
           </p>
         </motion.div>
 
