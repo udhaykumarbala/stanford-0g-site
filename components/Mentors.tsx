@@ -80,14 +80,6 @@ const mentors: Mentor[] = [
     },
   },
   {
-    name: "Eric Peter",
-    position: "Venture Partner · AI Specialist · PM at Databricks & Google Cloud · Stanford GSB",
-    image: "/eric.png",
-    socials: {
-      linkedin: "https://www.linkedin.com/in/ericcpeter/",
-    },
-  },
-  {
     name: "Jason Scott",
     position: "Accelerator Ops · Lead Google For Startups Worldwide · Stanford GSB & MIT",
     image: "/jason.png",
@@ -136,7 +128,7 @@ const mentors: Mentor[] = [
     },
   },
   {
-    name: "Bon S",
+    name: "Bon Sethi",
     position: "Field CTO at Google · Driving AI/ML & Web3 Innovation",
     image: "/bon.jpeg",
     socials: {
@@ -197,14 +189,6 @@ const mentors: Mentor[] = [
     image: "/marcus.jpeg",
     socials: {
       linkedin: "https://www.linkedin.com/in/mhollandeikeland/",
-    },
-  },
-  {
-    name: "Thomas Hay",
-    position: "Senior Staff Product Manager, Decentralized Infrastructure · Consensys",
-    image: "/thomas-hay.jpeg",
-    socials: {
-      linkedin: "https://www.linkedin.com/in/thomas-hay/",
     },
   },
   {
