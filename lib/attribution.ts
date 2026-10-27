@@ -1,6 +1,7 @@
 // Marketing attribution carried from the landing page to the application form.
 // Values are stored in sessionStorage on first visit and appended to the Tally
 // embed URL on /apply, where matching hidden fields capture them.
+// Alumni referral codes (`ref`) are handled separately in lib/referral.ts.
 
 export const ATTRIBUTION_PARAMS = [
   "utm_source",
@@ -8,13 +9,12 @@ export const ATTRIBUTION_PARAMS = [
   "utm_campaign",
   "utm_content",
   "utm_term",
-  "ref",
 ] as const;
 
 export const ATTRIBUTION_STORAGE_KEY = "apollo_attribution";
 
 export type Attribution = Partial<
-  Record<(typeof ATTRIBUTION_PARAMS)[number] | "referrer" | "landing_page", string>
+  Record<(typeof ATTRIBUTION_PARAMS)[number] | "ref" | "referrer" | "landing_page", string>
 >;
 
 function readStored(): Attribution {
