@@ -12,9 +12,32 @@ interface Perk {
   value: string;
   qualifier: string;
   headline: string;
-  points: string[];
+  points?: string[];
   steps?: string[];
 }
+
+const COHORT2_PERKS: Perk[] = [
+  {
+    partner: "Hashlock",
+    index: "01",
+    logo: "/hashlock.png",
+    value: "30% off",
+    qualifier: "Hashlock list price · every audit, any size",
+    headline: "Security audits at cohort pricing",
+    points: [
+      "Direct line and a 24h quote",
+      "Free readiness kit and office hours",
+    ],
+  },
+  {
+    partner: "Luna PR",
+    index: "02",
+    logo: "/luna-pr.png",
+    value: "20% off",
+    qualifier: "all packages",
+    headline: "PR packages from Luna PR",
+  },
+];
 
 const PERKS: Perk[] = [
   {
@@ -121,6 +144,15 @@ const ALUMNI_PERKS: AlumniPerk[] = [
     value: "30% off",
     detail: "your first framework, plus a free compliance planning session",
   },
+  {
+    company: "Mighty",
+    logo: "/projects/mighty.png",
+    website: "https://trymighty.ai",
+    websiteLabel: "trymighty.ai",
+    oneLiner: "Multimodal AI fraud detection in just one line of code",
+    value: "1st month free",
+    detail: "plus up to 50% off months 2-3 for prompt injection guard (text/image/audio)",
+  },
 ];
 
 function GroupHeading({
@@ -148,6 +180,113 @@ function GroupHeading({
         <span className="flex-1 h-px bg-gradient-to-r from-brand-purple-300/70 via-brand-purple-200/40 to-transparent" />
       </div>
       {subtitle && <p className="text-gray-600 mt-2">{subtitle}</p>}
+    </motion.div>
+  );
+}
+
+function PerkCard({
+  perk,
+  isInView,
+  delay,
+}: {
+  perk: Perk;
+  isInView: boolean;
+  delay: number;
+}) {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      animate={isInView ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.6, delay }}
+      whileHover={{ y: -10 }}
+      className="group glass glass-hover rounded-3xl overflow-hidden relative"
+    >
+      {/* Radial spotlight behind the value */}
+      <span className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_20%_50%,rgba(146,0,225,0.10),transparent_60%)]" />
+      {/* Faint index */}
+      <span className="hidden md:block absolute top-6 left-6 text-xs text-brand-purple-300 font-mono">
+        {perk.index}
+      </span>
+
+      <div className="relative z-10 grid grid-cols-1 md:grid-cols-[auto_1fr] gap-6 md:gap-8 items-center p-8">
+        {/* Zone A — partner identity */}
+        <div className="flex flex-col items-center md:items-start gap-3">
+          <div className="w-16 h-16 rounded-2xl bg-white flex items-center justify-center overflow-hidden ring-1 ring-brand-purple-500/10 group-hover:ring-brand-purple-500/30 shadow-sm transition-all">
+            <Image
+              src={perk.logo}
+              alt={`${perk.partner} logo`}
+              width={64}
+              height={64}
+              className="w-full h-full object-contain p-2.5"
+            />
+          </div>
+          <span className="text-sm font-semibold tracking-widest uppercase text-gray-500">
+            {perk.partner}
+          </span>
+        </div>
+
+        {/* Zone B — value + headline + points (+ stepper) */}
+        <div className="text-center md:text-left">
+          <div className="flex flex-col sm:flex-row sm:items-baseline gap-x-3 gap-y-1 justify-center md:justify-start">
+            <span className="text-4xl md:text-5xl font-bold text-gradient leading-none">
+              {perk.value}
+            </span>
+            <span className="text-base text-gray-500">
+              {perk.qualifier}
+            </span>
+          </div>
+          <h3 className="text-lg font-semibold text-gray-900 mt-2">
+            {perk.headline}
+          </h3>
+          {perk.points && (
+            <ul className="space-y-1.5 mt-3 inline-block text-left">
+              {perk.points.map((point) => (
+                <li
+                  key={point}
+                  className="flex items-start gap-2 text-gray-600 text-sm"
+                >
+                  <Check
+                    size={16}
+                    className="text-brand-purple-400 mt-0.5 flex-shrink-0"
+                  />
+                  <span>{point}</span>
+                </li>
+              ))}
+            </ul>
+          )}
+
+          {/* Octane-only program flow stepper */}
+          {perk.steps && (
+            <div className="flex items-start mt-6">
+              {perk.steps.map((step, i) => (
+                <Fragment key={step}>
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    animate={
+                      isInView ? { opacity: 1, scale: 1 } : {}
+                    }
+                    transition={{ duration: 0.4, delay: 0.4 + i * 0.08 }}
+                    className="flex flex-col items-center w-10 md:w-[72px] flex-shrink-0"
+                  >
+                    <span
+                      title={step}
+                      className="w-7 h-7 rounded-full bg-brand-purple-500/15 flex items-center justify-center text-xs font-semibold text-brand-purple-500"
+                    >
+                      {i + 1}
+                    </span>
+                    <span className="hidden md:block text-[10px] text-gray-400 mt-1.5 text-center leading-tight">
+                      {step}
+                    </span>
+                  </motion.div>
+                  {i < perk.steps!.length - 1 && (
+                    <span className="flex-1 h-px mt-3.5 bg-gradient-to-r from-brand-purple-300/60 to-brand-purple-200/40" />
+                  )}
+                </Fragment>
+              ))}
+            </div>
+          )}
+        </div>
+      </div>
     </motion.div>
   );
 }
@@ -182,8 +321,8 @@ export default function Perks() {
             Exclusive Perks for <span className="text-gradient">Apollo Teams</span>
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            What our partners gave Cohort 1, and what Cohort 1 founders now
-            offer the next cohort.
+            What our partners offer Cohort 2, what they gave Cohort 1, and what
+            Cohort 1 founders now offer the next cohort.
           </p>
           <div className="mt-6 flex justify-center">
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full gradient-border text-sm font-medium text-brand-purple-500">
@@ -194,117 +333,28 @@ export default function Perks() {
           </div>
         </motion.div>
 
-        {/* Partner perks */}
+        {/* Cohort 2 partner perks */}
         <GroupHeading
-          title="Cohort 1 perks"
-          subtitle="Offered to Cohort 1 teams by our partners. Cohort 2 partner perks are confirmed at kickoff."
+          title="Cohort 2 partner perks"
+          subtitle="Confirmed so far for Cohort 2 teams. More partner perks unlock at kickoff."
           isInView={isInView}
           delay={0.1}
         />
         <div className="flex flex-col gap-6">
-          {PERKS.map((perk, index) => {
-            return (
-              <motion.div
-                key={perk.partner}
-                initial={{ opacity: 0, y: 30 }}
-                animate={isInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.6, delay: index * 0.12 }}
-                whileHover={{ y: -10 }}
-                className="group glass glass-hover rounded-3xl overflow-hidden relative"
-              >
-                {/* Radial spotlight behind the value */}
-                <span className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_20%_50%,rgba(146,0,225,0.10),transparent_60%)]" />
-                {/* Faint index */}
-                <span className="hidden md:block absolute top-6 left-6 text-xs text-brand-purple-300 font-mono">
-                  {perk.index}
-                </span>
-
-                <div className="relative z-10 grid grid-cols-1 md:grid-cols-[auto_1fr] gap-6 md:gap-8 items-center p-8">
-                  {/* Zone A — partner identity */}
-                  <div className="flex flex-col items-center md:items-start gap-3">
-                    <div className="w-16 h-16 rounded-2xl bg-white flex items-center justify-center overflow-hidden ring-1 ring-brand-purple-500/10 group-hover:ring-brand-purple-500/30 shadow-sm transition-all">
-                      <Image
-                        src={perk.logo}
-                        alt={`${perk.partner} logo`}
-                        width={64}
-                        height={64}
-                        className="w-full h-full object-contain p-2.5"
-                      />
-                    </div>
-                    <span className="text-sm font-semibold tracking-widest uppercase text-gray-500">
-                      {perk.partner}
-                    </span>
-                  </div>
-
-                  {/* Zone B — value + headline + points (+ stepper) */}
-                  <div className="text-center md:text-left">
-                    <div className="flex flex-col sm:flex-row sm:items-baseline gap-x-3 gap-y-1 justify-center md:justify-start">
-                      <span className="text-4xl md:text-5xl font-bold text-gradient leading-none">
-                        {perk.value}
-                      </span>
-                      <span className="text-base text-gray-500">
-                        {perk.qualifier}
-                      </span>
-                    </div>
-                    <h3 className="text-lg font-semibold text-gray-900 mt-2">
-                      {perk.headline}
-                    </h3>
-                    <ul className="space-y-1.5 mt-3 inline-block text-left">
-                      {perk.points.map((point) => (
-                        <li
-                          key={point}
-                          className="flex items-start gap-2 text-gray-600 text-sm"
-                        >
-                          <Check
-                            size={16}
-                            className="text-brand-purple-400 mt-0.5 flex-shrink-0"
-                          />
-                          <span>{point}</span>
-                        </li>
-                      ))}
-                    </ul>
-
-                    {/* Octane-only program flow stepper */}
-                    {perk.steps && (
-                      <div className="flex items-start mt-6">
-                        {perk.steps.map((step, i) => (
-                          <Fragment key={step}>
-                            <motion.div
-                              initial={{ opacity: 0, scale: 0.8 }}
-                              animate={
-                                isInView ? { opacity: 1, scale: 1 } : {}
-                              }
-                              transition={{ duration: 0.4, delay: 0.4 + i * 0.08 }}
-                              className="flex flex-col items-center w-10 md:w-[72px] flex-shrink-0"
-                            >
-                              <span
-                                title={step}
-                                className="w-7 h-7 rounded-full bg-brand-purple-500/15 flex items-center justify-center text-xs font-semibold text-brand-purple-500"
-                              >
-                                {i + 1}
-                              </span>
-                              <span className="hidden md:block text-[10px] text-gray-400 mt-1.5 text-center leading-tight">
-                                {step}
-                              </span>
-                            </motion.div>
-                            {i < perk.steps!.length - 1 && (
-                              <span className="flex-1 h-px mt-3.5 bg-gradient-to-r from-brand-purple-300/60 to-brand-purple-200/40" />
-                            )}
-                          </Fragment>
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                </div>
-              </motion.div>
-            );
-          })}
+          {COHORT2_PERKS.map((perk, index) => (
+            <PerkCard
+              key={perk.partner}
+              perk={perk}
+              isInView={isInView}
+              delay={index * 0.12}
+            />
+          ))}
 
           {/* More partner perks at kickoff */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
             className="rounded-2xl px-6 py-4 border border-dashed border-brand-purple-300 bg-brand-purple-100/20 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-center sm:text-left"
           >
             <span className="font-semibold text-brand-purple-500 whitespace-nowrap">
@@ -315,6 +365,26 @@ export default function Perks() {
               infrastructure.
             </span>
           </motion.div>
+        </div>
+
+        {/* Cohort 1 partner perks */}
+        <div className="mt-20">
+          <GroupHeading
+            title="Cohort 1 perks"
+            subtitle="Offered to Cohort 1 teams by our partners."
+            isInView={isInView}
+            delay={0.2}
+          />
+          <div className="flex flex-col gap-6">
+            {PERKS.map((perk, index) => (
+              <PerkCard
+                key={perk.partner}
+                perk={perk}
+                isInView={isInView}
+                delay={0.2 + index * 0.12}
+              />
+            ))}
+          </div>
         </div>
 
         {/* Alumni perks */}
